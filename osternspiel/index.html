@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Rafiki">
+    <meta name="generator" content="Jekyll v3.8.6">
+    <title>Frohe Ostern</title>
+
+    <!-- Bootstrap core CSS -->
+		<link href="../css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+		<!-- W3S CSS -->
+		<link href="../css/w3s.css" rel="stylesheet" crossorigin="anonymous">
+
+		<!-- the Eggs -->
+    <link href="style.css" rel="stylesheet">
+  </head>
+<body>
+	<header>
+		<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarCollapse">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item active">
+						<a class="nav-link" href="#">Hast du Eier? Finde die hier sonst! Frohe Ostern <span class="sr-only">(current)</span></a>
+					</li>
+				</ul>
+				<a class="navbar-brand" href="#">Das Osternspiel</a>
+			</div>
+		</nav>
+	</header>
+
+	<!-- LEVELS -->
+	<div class="w3-display-left w3-center w3-padding w3-margin lvls">
+		<p class="lvldesc" id="lvl1">BILD 1</p>
+		<p class="lvldesc" id="lvl2">BILD 2</p>
+		<p class="lvldesc" id="lvl3">BILD 3</p>
+		<p class="lvldesc" id="lvl4">BILD 4</p>
+		<p class="lvldesc" id="lvl5">BILD 5</p>
+		<p class="lvldesc" id="lvl6">BILD 6</p>
+		<p class="lvldesc" id="lvl7">BILD 7</p>
+		<p class="lvldesc" id="lvl8">BILD 8</p>
+		<p class="lvldesc" id="lvl9">BILD 9</p>
+ 	</div>
+	
+	<!-- CURRENT LEVEL -->
+	<div class="w3-display-right w3-center w3-padding w3-margin lvls">
+		<p>GEFUNDEN</p>
+		<p id="numF">0</p>
+		<p>INSGESAMT</p>
+		<p id="numM">0</p>
+ 	</div>
+	
+	<!-- BILD -->
+	<div class="w3-center">
+		<div id="gobtn" class="btnstart" onclick="startGame('img1')">
+			<img src="https://cdn.pixabay.com/photo/2015/10/31/12/34/button-1015629_960_720.jpg" width="720px" height="480px">
+		</div>
+		
+		<!-- LVL 1 -->
+		<div class="img-container img_v w3-animate-right" id="img1">
+			<img src="img/img1.jpg" width="320" height="457">
+			<div id="ei1" onclick="nextLevel(2)" class="location"></div>
+		</div>
+		
+		<!-- LVL 2 -->
+		<div class="img-container img_h w3-animate-right" id="img2" style="display: none">
+			<img src="img/img2.jpg" width="457" height="320">
+			<div id="ei2" onclick="plus2(0, 'ei2', 3)" class="location"></div>
+			<div id="ei3" onclick="plus2(1, 'ei3', 3)" class="location"></div>
+		</div>
+		
+		<!-- LVL 3 -->
+		<div class="img-container img_v w3-animate-right" id="img3" style="display: none">
+			<img src="img/img3.jpg" width="320" height="457">
+			<div id="ei4" onclick="nextLevel(4)" class="location"></div>
+		</div>
+		
+		<!-- LVL 4 -->
+		<div class="img-container img_h w3-animate-right" id="img4" style="display: none">
+			<img src="img/img4.jpg" width="457" height="320">
+			<div id="ei5" onclick="plus2(0, 'ei5', 5)" class="location"></div>
+			<div id="ei6" onclick="plus2(1, 'ei6', 5)" class="location"></div>
+		</div>
+		
+		<!-- LVL 5 -->
+		<div class="img-container img_v w3-animate-right" id="img5" style="display: none">
+			<img src="img/img5.jpg" width="320" height="457">
+			<div id="ei7" onclick="plus2(0, 'ei7', 6)" class="location"></div>
+			<div id="ei8" onclick="plus2(1, 'ei8', 6)" class="location"></div>
+		</div>
+		
+		<!-- LVL 6 -->
+		<div class="img-container img_h w3-animate-right" id="img6" style="display: none">
+			<img src="img/img6.jpg" width="457" height="320">
+			<div id="ei9" onclick="plus3(0, 'ei9', 7)" class="location"></div>
+			<div id="ei10" onclick="plus3(1, 'ei10', 7)" class="location"></div>
+			<div id="ei11" onclick="plus3(2, 'ei11', 7)" class="location"></div>
+		</div>
+		
+		<!-- LVL 7 -->
+		<div class="img-container img_h w3-animate-right" id="img7" style="display: none">
+			<img src="img/img7.jpg" width="457" height="320">
+			<div id="ei12" onclick="plus4(0, 'ei12', 8)" class="location"></div>
+			<div id="ei13" onclick="plus4(1, 'ei13', 8)" class="location"></div>
+			<div id="ei14" onclick="plus4(2, 'ei14', 8)" class="location"></div>
+			<div id="ei15" onclick="plus4(3, 'ei15', 8)" class="location"></div>
+		</div>
+		
+		<!-- LVL 8 -->
+		<div class="img-container img_h w3-animate-right" id="img8" style="display: none">
+			<img src="img/img8.jpg" width="457" height="320">
+			<div id="ei16" onclick="plus4(0, 'ei16', 9)" class="location"></div>
+			<div id="ei17" onclick="plus4(1, 'ei17', 9)" class="location"></div>
+			<div id="ei18" onclick="plus4(2, 'ei18', 9)" class="location"></div>
+			<div id="ei19" onclick="plus4(3, 'ei19', 9)" class="location"></div>
+		</div>
+		
+		<!-- LVL 9 -->
+		<div class="img-container img_h w3-animate-right" id="img9" style="display: none">
+			<img src="img/img9.jpg" width="457" height="320">
+			<div id="ei20" onclick="plus2(0, 'ei20', 10)" class="location"></div>
+			<div id="ei21" onclick="plus2(1, 'ei21', 10)" class="location"></div>
+		</div>
+		
+		<div class="img-container img_h w3-animate-right" id="img10" style="display: none">
+			<h1>FROHE OSTERN</h1>
+			<img src="https://cdn.pixabay.com/photo/2019/10/29/22/36/figures-4588334_960_720.jpg" width="457" height="320">
+		</div>
+		
+		<div class="w3-display-bottommiddle w3-text w3-dark-grey w3-padding" style="width: 100%">
+			<a href="https://spielinkiel.github.io/#de">Ein OsternSpiel von WandelWürfel</a>
+  	</div>
+		
+	</div>
+	<script>
+		var clvl2 = [0,0];
+		function startGame(idImg1) {
+			document.getElementById('gobtn').style.display = "none";
+			document.getElementById(idImg1).style.display = "inline";
+			document.getElementById('lvl1').style.color = "orange";
+			document.getElementById('numM').innerHTML = 1;
+		}
+		function nextLevel(lvlnum) {
+			var oldLvl = lvlnum - 1;
+			var donelevelId = "lvl" + oldLvl;
+			var nextLevelId = "lvl" + lvlnum;
+			var doneImgId = "img" + oldLvl;
+			var nextImgId = "img" + lvlnum;
+			document.getElementById(doneImgId).style.display = "none";
+			document.getElementById(nextImgId).style.display = "inline";
+			document.getElementById(donelevelId).style.color = "green";
+			document.getElementById(nextLevelId).style.color = "orange";
+			var missingEi = getEiNum(lvlnum);
+			document.getElementById('numM').innerHTML = missingEi;
+			document.getElementById('numF').innerHTML = 0;
+			clvl2 = [0,0];
+			clvl3 = [0,0,0];
+			c3 = 0;
+			clvl4 = [0,0,0,0];
+			c4 = 0;
+		}
+		function plus2(whichEi, eiID, lvlnum) {
+			clvl2[whichEi] = 1;
+			document.getElementById(eiID).style.background = "darkgreen";
+			if (clvl2[0] == 1 && clvl2[1] == 1) {
+				nextLevel(lvlnum);
+			}
+			else {document.getElementById('numF').innerHTML = 1}
+		}
+		var clvl3 = [0,0,0];
+		var c3 = 0;
+		function plus3(whichEi, eiID, lvlnum) {
+			c3 += 1 - clvl4[whichEi];
+			clvl3[whichEi] = 1;
+			document.getElementById(eiID).style.background = "darkgreen";
+			if (clvl3[0] == 1 && clvl3[1] == 1 && clvl3[2] == 1) {
+				nextLevel(lvlnum);
+			}
+			else {document.getElementById('numF').innerHTML = c3}
+		}
+		var clvl4 = [0,0,0,0];
+		var c4 = 0;
+		function plus4(whichEi, eiID, lvlnum) {
+			c4 += 1 - clvl4[whichEi];
+			clvl4[whichEi] = 1;
+			document.getElementById(eiID).style.background = "darkgreen";
+			if (clvl4[0] == 1 && clvl4[1] == 1 && clvl4[2] == 1 && clvl4[3] == 1) {
+				nextLevel(lvlnum);
+			}
+			else {document.getElementById('numF').innerHTML = c4}
+		}
+		function getEiNum(lvlnum)  {
+			if (lvlnum == 1) {return 1;}
+			else if (lvlnum == 2) {return 2;}
+			else if (lvlnum == 3) {return 1;}
+			else if (lvlnum == 4) {return 2;}
+			else if (lvlnum == 5) {return 2;}
+			else if (lvlnum == 6) {return 3;}
+			else if (lvlnum == 7) {return 4;}
+			else if (lvlnum == 8) {return 4;}
+			else if (lvlnum == 9) {return 2;}
+			return 0;
+		}
+	</script>
+</body>
+</html>
