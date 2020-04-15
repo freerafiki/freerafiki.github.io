@@ -1,0 +1,96 @@
+.project {
+	margin: 0rem 0rem !important;
+  background-position: center;
+  background-size: cover;
+	height: 20rem;
+	font-weight: 500;
+	font-size: 0.125rem;
+	opacity: 0.6;
+}
+
+.coloroverlay {
+	padding: 5rem 3rem;
+	opacity: 1;
+}
+
+.projectbg {
+	
+}
+
+.projectbg:hover > div {
+  opacity: 0.8;
+}
+
+.projectbg:hover > div:hover {
+  opacity: 1;
+}
+
+.textlayer {
+	color:white;
+	font-size: 1.125rem;
+	opacity: 1;
+}
+.normagin {
+	margin: 0rem 0rem!important;
+}
+
+hr {
+	display: block;
+	height: 2px;
+	border: 0;
+	border-top: 2px solid #ccc;
+	margin: 1em 0;
+	padding: 0;
+	width: 50%;
+}
+
+/* SCIENCE */
+#science {
+	background-image: url(../img/science.png);
+	height: 22rem;
+}
+
+#bgsc {
+	background-color:darkgreen;
+}
+
+/* SPIELE */
+#spiele {
+	background-image: url(https://images.unsplash.com/photo-1495055154266-57bbdeada43e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=900&q=60);
+	height: 22rem;
+}
+
+#bgsp {
+	background-color:blue;
+}
+
+/* READS */
+#read {
+	background-image: url(https://images.unsplash.com/photo-1546561892-65bf811416b9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=900&q=60);
+	height: 22rem;
+}
+
+#bgrd {
+	background-color:indigo;
+}
+
+/* MOVIES */
+#movies {
+	background-image: url(https://images.unsplash.com/photo-1546561892-65bf811416b9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=900&q=60);
+	height: 22rem;
+}
+
+#bgmv {
+	background-color:indigo;
+}
+
+/* DEEP LEARNING */
+#deepl {
+	background-image: url(https://images.unsplash.com/photo-1546561892-65bf811416b9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=900&q=60);
+	height: 22rem;
+}
+
+#bgdl {
+	background-color:indigo;
+}
+
