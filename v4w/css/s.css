@@ -9,7 +9,7 @@ body, html {height: 100%}
 
 .bgimg:after {
 	content : "";
-	display: inline;
+	display: block;
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -59,7 +59,7 @@ body, html {height: 100%}
 	padding: 20px;
 }
 .searchfield {
-	z-index: 1;
+	z-index: 6;
 	margin: 1%;
 	padding: 1%;
 	border-radius: 20px;
@@ -95,6 +95,9 @@ body, html {height: 100%}
 }
 .Xbtn {
 	float: right;
+}
+.srcbtn {
+	margin: 0px !important;
 }
 
 .aboveZoom {

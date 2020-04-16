@@ -19,6 +19,15 @@
 	<script src="js/v4w.js"></script>
 <body>
 	<!-- DIV CON LA MAPPA -->
+	<!-- DIV IN ALTO A SINISTRA - QUI LA BARRA DI RICERCA -->
+		<div class="leaflet-top leaflet-left" id="searchbar">
+			<div class="searchfield leaflet-control w3-medium">
+				<form id="ricerca_ind" action="indirizzo">
+					<input type="text"  placeholder="cerca..">
+					<button class="btn srcbtn v4wbtn" type="submit" form="ricerca_ind" ><i class="fa fa-search"></i></button>
+				</form>
+			</div>
+		</div>
 	<div id="mapid">
 		<script>
 			var whichmap = "osm";
@@ -34,15 +43,7 @@
 			// a random marker to show a markers are used
 			var marker = L.marker([45.43, 12.33]).addTo(mymap);
 		</script>
-		<!-- DIV IN ALTO A SINISTRA - QUI LA BARRA DI RICERCA -->
-		<div class="leaflet-top leaflet-left">
-			<div class="searchfield leaflet-control w3-medium">
-				<form id="ricerca_ind" action="indirizzo">
-					<input type="text"  placeholder="cerca..">
-					<button class="btn srcbtn v4wbtn" type="submit" form="ricerca_ind" ><i class="fa fa-search"></i></button>
-				</form>
-			</div>
-		</div>
+		
 		<!-- DIV IN ALTO A DESTRA - QUI IL PULSANTE DI AIUTO -->
 		<div class="leaflet-top leaflet-right">
 			<a onclick="showHelpWindow()">

@@ -10,6 +10,7 @@
 	*/
 	function showHelpWindow() {
 		document.getElementById("helpwindow").style.display = "block";
+		document.getElementById("searchbar").style.display = "none";
 	}
 
 	/* Close the window visualizing a help message on how to make the correct search.
@@ -17,6 +18,7 @@
 	*/
 	function closeHelpWindow() {
 		document.getElementById("helpwindow").style.display = "none";
+		document.getElementById("searchbar").style.display = "block";
 	}
 
 
