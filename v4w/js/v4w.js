@@ -22,6 +22,7 @@
 
 	function changeMap(currentMap) {
 		if (currentMap == "osm") {
+			mymap.attributionControl._attributions = {};
 			var Stamen_Watercolor = L.tileLayer('https://stamen-tiles-{s}.a.ssl.fastly.net/watercolor/{z}/{x}/{y}.{ext}', {
 				attribution: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a> &mdash; Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
 				subdomains: 'abcd',
@@ -32,6 +33,7 @@
 			whichmap = "water";
 		}
 		else {
+			mymap.attributionControl._attributions = {};
 			var OpenStreetMap_DE = L.tileLayer('https://{s}.tile.openstreetmap.de/tiles/osmde/{z}/{x}/{y}.png', {
 			maxZoom: 20,
 			zoomControl: false,
@@ -39,4 +41,23 @@
 			}).addTo(mymap);
 			whichmap = "osm";
 		}
+	}
+
+function locateUser(map) {
+	map.locate({setView: true, watch: true}) /* This will return map so you can do chaining */
+		.on('locationfound', function(e){
+				var marker = L.marker([e.latitude, e.longitude]).bindPopup('Your are here :)');
+				var circle = L.circle([e.latitude, e.longitude], e.accuracy/2, {
+						weight: 1,
+						color: 'blue',
+						fillColor: '#cacaca',
+						fillOpacity: 0.2
+				});
+				map.addLayer(marker);
+				map.addLayer(circle);
+		})
+	 .on('locationerror', function(e){
+				console.log(e);
+				alert("Location access denied.");
+		});
 	}
