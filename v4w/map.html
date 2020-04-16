@@ -13,22 +13,27 @@
 	<script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
 		 integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
 		 crossorigin=""></script>
+	<!-- PROVIDERS FOR DIFFERENT MAP TYPES -->
+	<script src="js/leaflet-providers.js"></script>
 	<!-- Our own (little) javascript library. -->
 	<script src="js/v4w.js"></script>
 <body>
 	<!-- DIV CON LA MAPPA -->
 	<div id="mapid">
 		<script>
+			var whichmap = "osm";
 			var mymap = L.map('mapid').setView([45.43, 12.33], 13);
 			var OpenStreetMap_DE = L.tileLayer('https://{s}.tile.openstreetmap.de/tiles/osmde/{z}/{x}/{y}.png', {
 			maxZoom: 20,
 			zoomControl: false,
 			attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
 			}).addTo(mymap);
+			//OpenStreetMap_DE = L.tileLayer.provider('Stamen.Watercolor').addTo(mymap);
 			// Zoom buttons to the bottom right
 			mymap.zoomControl.setPosition('bottomright');
 			// a random marker to show a markers are used
 			var marker = L.marker([45.43, 12.33]).addTo(mymap);
+			
 		</script>
 		<!-- DIV IN ALTO A SINISTRA - QUI LA BARRA DI RICERCA -->
 		<div class="leaflet-top leaflet-left">
@@ -48,7 +53,13 @@
 			</a>
 		</div>
 	</div>
-	
+	<div class="leaflet-bottom leaflet-left maptype">
+		<a onclick="changeMap(whichmap)">
+			<div class="leaflet-control">
+				<button class="btn helpbtn"><i class="fa fa-map"></i></button>	
+			</div>
+		</a>
+	</div>
 	<div class="helpwindowpopup" id="helpwindow">
 		<p class="w3-large"><b>COSA POSSO FARE?</b></p><br>
 		Cerca il tuo indirizzo, inserendo SESTIERE e NUMERO CIVICO.<br>
@@ -66,6 +77,7 @@
 		<a onclick="closeHelpWindow()"><button class="btn closebutton">HO CAPITO</button></a>
 		
 	</div>
+	
 
 <script>closeHelpWindow();</script>
 </body>
