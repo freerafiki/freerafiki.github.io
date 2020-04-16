@@ -96,3 +96,8 @@ body, html {height: 100%}
 .Xbtn {
 	float: right;
 }
+
+.aboveZoom {
+	padding-bottom: 6rem;
+	margin-bottom: 3rem;
+}
