@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="">
+	<meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors like me">
+	<meta name="generator" content="Jekyll v3.8.6">
+	<title>Deep Learning Course - Kiel</title>
+
+	<!-- Bootstrap core CSS -->
+	<link href="../css/bootstrap.css" rel="stylesheet">
+	<!-- MAYBE FOR WEB? integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> -->
+	<link href="s.css" rel="stylesheet">
+	<script src="dl.js"></script>
+	<script src="../js/jquery.min.js"></script>
+	<style>
+		.bd-placeholder-img {
+			font-size: 1.125rem;
+			text-anchor: middle;
+			-webkit-user-select: none;
+			-moz-user-select: none;
+			-ms-user-select: none;
+			user-select: none;
+		}
+
+		@media (min-width: 768px) {
+			.bd-placeholder-img-lg {
+				font-size: 3.5rem;
+			}
+		}
+	</style>
+
+</head>
+<body>
+	<header>
+  	<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarCollapse">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item active">
+						<a class="nav-link" href="#">Deep Learning Course <span class="sr-only">(current)</span></a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#cercacasa">Material</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#rivarghe">Projects</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#esiste">Forum</a>
+					</li>
+				</ul>
+			</div>
+  	</nav>
+	</header>
+
+
+	<div class="container">
+		<div class="material" id="materialid">
+			<p class="titletext"><b>Material and Resources</b></p>
+			<div class="expltext">The course is based on various Coursera courses. It may be seen as a subset of the <a href="https://www.coursera.org/specializations/deep-learning">DeepLearning Specialization on Coursera</a>, available also at <a href="https://www.deeplearning.ai/">DeepLearning.ai</a> (it may slightly differs).
+			However, both specialization has a lot of contents and are not for free (even though on Coursera the course can be audit for free).<br>
+			In this course we will go through the first 3 Courses:
+			<ul class="list">
+				<li><a href="https://www.coursera.org/learn/neural-networks-deep-learning?specialization=deep-learning">Neural Networks and Deep Learning</a>, </li>
+				<li><a href="https://www.coursera.org/learn/deep-neural-network?specialization=deep-learning">Improving Deep Neural Networks: Hyperparameter tuning, Regularization and Optimization</a>,</li>
+				<li><a href="https://www.coursera.org/learn/machine-learning-projects?specialization=deep-learning">Structuring Machine Learning Projects</a></li>
+			</ul>
+			<p class="expltext">The course will make use of the <a href="https://colab.research.google.com/notebooks/intro.ipynb">Google Colab</a> tool for the programming part, which allow for a very smooth collaborative working environment with no need to install anything on the personal computer and access to GPU computing. <br> 
+			The programming will be done in the <a href="https://www.python.org/">Python</a> language. Everybody should have basic knowledge in this language (or Matlab, R and similar) in order to be able to complete the assignment. Working with array and matrices is needed and is very well handled from the <a href="https://numpy.org/">numpy</a> python library.<br>
+			In the second week of the <a href="https://www.coursera.org/learn/neural-networks-deep-learning?specialization=deep-learning#syllabus">Neural Networks and Deep Learning</a> course a further insight on vectorization in python is given, so no need to worries if you are not yet very familiar with such operations.
+			Some of the concepts explained in the course will require some basic knowledge of mathematics and linear algebra. Again, the first 2 weeks of the <a href="https://www.coursera.org/learn/neural-networks-deep-learning?specialization=deep-learning#syllabus">Neural Networks and Deep Learning</a> course will give hopefully enough examples to clarify the matter. On request, additional bibliography can also be provided. 
+			</div>
+		</div>
+		
+		<div class="weeks">
+			<p class="titletext"><b>Weekly Summary</b></p>
+			<p class="expltext">The course takes place every week. Here a recap of what happened - what is planned and related resources.</p>
+			<!-- WEEKS -->
+
+			<!-- WEEK 1 -->
+			<a href="#week1" onclick="toggleWeek('1')"><div class="week"> <span class="symbol" id="symb1">&#9658;</span><b>&nbsp;Week 1</b></div></a>
+			<p class="expltext weekcontent" id="week1">Week 1 content</p>
+			
+			<!-- WEEK 2 -->
+			<a href="#week1" onclick="toggleWeek('2')"><div class="week"> <span class="symbol" id="symb2">&#9658;</span> <b>Week 2</b></div></a>
+			<p class="expltext weekcontent" id="week2">Week 2 content</p>
+			
+			<!-- WEEK 3 -->
+			<a href="#week1" onclick="toggleWeek('3')"><div class="week"> <span class="symbol" id="symb2">&#9658;</span> <b>Week 3</b></div></a>
+			<p class="expltext weekcontent" id="week3">Week 3 content</p>
+		</div>
+	</div>
+		
+	
+
+
+<script>
+	closeAllWeeks();
+</script>
+</body>
+</html>
