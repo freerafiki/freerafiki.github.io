@@ -38,3 +38,14 @@
 	transition: .5 ease;
 }
 
+/* SLIDES CSS */
+.slidetitle {
+	font-size: 2.5rem;
+	font-weight: 700;
+	color:bisque;
+}
+
+.slidewithalotoftext {
+	font-size: 2.0rem;
+}
+
