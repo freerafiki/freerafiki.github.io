@@ -1,19 +1,15 @@
 .container {
-	margin-top: 4rem;
+	margin-top: 1rem;
 	margin-left: 1rem;
 	margin-right: 1rem;
 	padding: 1rem;
 	font-family: "Open Sans";
 }
-
-.material {
-	padding-top: 0.5rem;
-	padding-bottom: 0.5rem;
-}
-
 .titletext {
 	font-size: 1.5rem;
-	
+}
+.material {
+	padding-top: 3.5rem;
 }
 .expltext {
 	font-size: 0.9rem;
@@ -21,12 +17,15 @@
 .list {
 	padding-top: 0.3rem;
 }
-
+.projects {
+	padding-top: 1rem;
+}
 .week {
 	font-weight: 900;
 	font-size: 1.3rem;
 	padding-bottom: 0.3rem;
 	padding-top: 0.3rem;
+	color:#0989ff;
 }
 .rotated {
 	float:left;
