@@ -141,6 +141,40 @@ body, html {height: 100%}
 
 .strato {
 	min-height: 2.5rem;
+	transition: width 0.5s, padding 0.5s;
+}
+.c50 {
+	float: left;
+	width: 50%;
+}
+.c50:hover {
+	width: 55%;
+}
+.c60 {
+	float: left;
+	width: 60%;
+}
+.level:hover {
+	padding: 0.2rem;
+	border-radius: 0.5rem;
+	margin-right: 1rem;
+	background-color: #DDD;
+}
+@-webkit-keyframes fadeIn {
+    from { opacity: 0; }
+      to { opacity: 1; }
+}
+@keyframes fadeIn {
+    from { opacity: 0; }
+      to { opacity: 1; }
+}
+@-webkit-keyframes fadeOut {
+    from { opacity: 1; }
+      to { opacity: 0; }
+}
+@keyframes fadeOut {
+    from { opacity: 1; }
+      to { opacity: 0; }
 }
 
 /* DYNAMIC CONTENT */
@@ -148,6 +182,12 @@ body, html {height: 100%}
 	padding: 1.5rem;
 	border-radius: 2rem;
 	transition: 5s ease;
+	-webkit-animation: fadeIn 1s;
+	animation: linear fadeIn 1s;
+}
+.fadingOut {
+	-webkit-animation: fadeOut 2s;
+	animation: linear fadeOut 2s;
 }
 .dyn-title {
 	font-size: 1.4rem;

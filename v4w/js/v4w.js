@@ -68,12 +68,29 @@ function locateUser(map) {
 function hideAll() {
 	var dynamics = document.getElementsByClassName("dyn-content");
 	for (i = 0; i < dynamics.length; i++) {
-		dynamics[i].style.display = "none";
+		dynamics[i].classList.add("fadingOut");
+		setTimeout(function(){ },2000);
+		dynamics[i].style.display	= "none";
+		dynamics[i].style.opacity = 0;
+	}
+	var strati = document.getElementsByClassName("strato");
+	//console.log(strati);
+	for (j = 0; j < strati.length; j++)	{
+		if (strati[j].classList.contains("c60")) {
+			strati[j].classList.remove("c60");
+			strati[j].classList.add("c50");
+		}
 	}
 }
 
 function show(dynid) {
 	hideAll();
-	document.getElementById(dynid).style.display = "block";
-	//document.getElementById(dynid.concat("box")).style.paddingLeft = "1rem"
+	var blockToBeShown = document.getElementById(dynid);
+	blockToBeShown.style.display = "block";
+	blockToBeShown.style.opacity = 1;
+	document.getElementById(dynid.concat("box")).classList.remove("c50");
+	document.getElementById(dynid.concat("box")).classList.add("c60");
+	if (blockToBeShown.classList.contains("fadingOut")) {
+			blockToBeShown.classList.remove("fadingOut");
+		}
 }

@@ -81,92 +81,92 @@
 			<!-- NOMI E STRATI -->
 			<div class="w3-col s5" style="height: 100%; margin-bottom: 1rem;">&nbsp;
 				<!-- LIVELLO -->
-				<div onclick="show('mappa')" class="w3-row">
+				<div onclick="show('mappa')" class="w3-row level">
 					<div class="w3-col s4">
 						<p class="lefttext" >Mappa Geografica</p>
 					</div>
-					<div class="w3-col s7 strato" id="mappabox" style="background-color: #DC4F22; height: 100%;">
+					<div class="c50 strato" id="mappabox" style="background-color: #DC4F22; height: 100%;">
 						&nbsp;
 					</div>
 				</div>
 				<!-- LIVELLO -->
-				<div onclick="show('indirizzo')" class="w3-row strato">
+				<div onclick="show('indirizzo')" class="w3-row level">
 					<div class="w3-col s4">
-						<p class="lefttext" id="awesome">Indirizzi</p>
+						<p class="lefttext" >Indirizzi</p>
 					</div>
-					<div class="w3-col s7 strato" style="background-color: #DC9322; height: 100%;">
+					<div class="c50 strato" id="indirizzobox" style="background-color: #DC9322; height: 100%;">
 						&nbsp;
 					</div>
 				</div>
 				<!-- LIVELLO -->
-				<div onclick="show('interesse')" class="w3-row strato">
+				<div onclick="show('interesse')" class="w3-row level">
 					<div class="w3-col s4">
 						<p class="lefttext" id="awesome">Punti di Interesse</p>
 					</div>
-					<div class="w3-col s7 strato" style="background-color: #CFDC22">
+					<div class="c50 strato" id="interessebox" style="background-color: #CFDC22">
 						&nbsp;
 					</div>
 				</div>
 				<!-- LIVELLO -->
-				<div onclick="show('percorsi')" class="w3-row strato">
+				<div onclick="show('percorsi')" class="w3-row level">
 					<div class="w3-col s4">
 						<p class="lefttext" id="awesome">Percorsi</p>
 					</div>
-					<div class="w3-col s7 strato" style="background-color: #79DC22">
+					<div class="c50 strato" id="percorsibox" style="background-color: #79DC22">
 						&nbsp;
 					</div>
 				</div>
 				<!-- LIVELLO -->
-				<div onclick="show('barca')" class="w3-row strato">
+				<div onclick="show('barca')" class="w3-row level">
 					<div class="w3-col s4">
 						<p class="lefttext" id="awesome">In Barca</p>
 					</div>
-					<div class="w3-col s7 strato" style="background-color: #27DC22">
+					<div class="c50 strato" id="barcabox" style="background-color: #27DC22">
 						&nbsp;
 					</div>
 				</div>
 				<!-- LIVELLO -->
-				<div onclick="show('segnalazioni')" class="w3-row strato">
+				<div onclick="show('segnalazioni')" class="w3-row level">
 					<div class="w3-col s4">
 						<p class="lefttext" id="awesome">Segnalazioni</p>
 					</div>
-					<div class="w3-col s7 strato" style="background-color: #22DC81">
+					<div class="c50 strato" id="segnalazionibox" style="background-color: #22DC81">
 						&nbsp;
 					</div>
 				</div>
 				<!-- LIVELLO -->
-				<div onclick="show('comunita')" class="w3-row strato">
+				<div onclick="show('comunita')" class="w3-row level">
 					<div class="w3-col s4">
 						<p class="lefttext" id="awesome">Comunità</p>
 					</div>
-					<div class="w3-col s7 strato" style="background-color: #22DCC9">
+					<div class="c50 strato" id="comunitabox" style="background-color: #22DCC9">
 						&nbsp;
 					</div>
 				</div>
 				<!-- LIVELLO -->
-				<div onclick="show('eventi')" class="w3-row strato">
+				<div onclick="show('eventi')" class="w3-row level">
 					<div class="w3-col s4">
 						<p class="lefttext" id="awesome">Eventi</p>
 					</div>
-					<div class="w3-col s7 strato" style="background-color: #229CDC">
+					<div class="c50 strato" id="eventibox" style="background-color: #229CDC">
 						&nbsp;
 					</div>
 				</div>
 				<!-- LIVELLO -->
-				<div onclick="show('associazioni')" class="w3-row strato">
+				<div onclick="show('associazioni')" class="w3-row level">
 					<div class="w3-col s4">
 						<p class="lefttext" id="awesome">Corsi e Associazioni</p>
 					</div>
-					<div class="w3-col s7 strato" style="background-color: #2247DC">
+					<div class="c50 strato" id="associazionibox" style="background-color: #2247DC">
 						&nbsp;
 					</div>
 				</div>
 				<!-- LIVELLO -->
-				<div onclick="show('vicini')" class="w3-row strato">
+				<div onclick="show('vicini')" class="w3-row level">
 					<div class="w3-col s4">
 						<p class="lefttext" id="awesome">Buon Vicinato</p>
 					</div>
-					<div class="w3-col s7 strato" style="background-color: #5322DC">
+					<div class="c50 strato" id="vicinibox" style="background-color: #5322DC">
 						&nbsp;
 					</div>
 				</div>
@@ -177,7 +177,7 @@
 			<div class="w3-col s7">
 
 				<!-- A DYNAMIC CONTENT THAT CAN DISAPPEAR -->
-				<div class="dyn-content" id="mappa" style="background-color: #DB886E">
+				<div class="dyn-content fadeIn" id="mappa" style="background-color: #DB886E">
 					<p class="dyn-title">IL CUORE DI VENEZIA</p>
 					<img src="img/vart.png" class="center" width=80%>
 					<p class="dyn-blabla">Una mappa geografica può essere uno strumento non solo bellissimo, ma anche incredibilmente potente. Non ci credete? Date un'occhiata ai prossimi livelli!</p>
