@@ -63,3 +63,17 @@ function locateUser(map) {
 				alert("Location access denied.");
 		});
 	}
+
+// progetto 
+function hideAll() {
+	var dynamics = document.getElementsByClassName("dyn-content");
+	for (i = 0; i < dynamics.length; i++) {
+		dynamics[i].style.display = "none";
+	}
+}
+
+function show(dynid) {
+	hideAll();
+	document.getElementById(dynid).style.display = "block";
+	//document.getElementById(dynid.concat("box")).style.paddingLeft = "1rem"
+}
