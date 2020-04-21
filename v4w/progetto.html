@@ -1,0 +1,260 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="">
+	<meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+	<meta name="generator" content="Jekyll v3.8.6">
+	<title>Ea classe dee Scoasse</title>
+
+	<link rel="stylesheet" href="css/s.css">
+	<link rel="stylesheet" href="css/w3s.css">
+
+	<!-- Bootstrap core CSS -->
+	<link href="css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+	<style>
+		.bd-placeholder-img {
+			font-size: 1.125rem;
+			text-anchor: middle;
+			-webkit-user-select: none;
+			-moz-user-select: none;
+			-ms-user-select: none;
+			user-select: none;
+		}
+
+		@media (min-width: 768px) {
+			.bd-placeholder-img-lg {
+				font-size: 3.5rem;
+			}
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarCollapse">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item active">
+						<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="indirizzo">Cerca casa</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="direzione">Como ghe rivo?</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="degoogling">Ma no esiste già?</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Spritz gratis</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Marghera senza fabbriche</a>
+					</li>
+				</ul>
+				<a class="navbar-brand" href="#">I Fioi</a>
+			</div>
+		</nav>
+	</header>
+
+	<!-- CONTENT (ALL) -->
+	<div class="content">
+
+		<div>
+			<p class="title">GLI ULTIMI SUPERSTITI DI VENEZIA</p>
+		</div>
+
+		<p class="sometext">Forse non siamo in grado di ridurre l'impatto ecologico di una passeggiata, ma crediamo ancora di poter invadere, dal momento che tutto è finto. Se state guardando questo sito dal telefono, nulla funzionerà, e forse è meglio così. Pazienza. Se state usando questo sito da un computer, magari usando un browser opensource invece di google chrome, avete tutta la nostra ammirazione. Se avete bisogno di cercare un civico che google maps non trova o inviare un mazzo di fiori alla vostra amata con un trasporto ecologico (a impatto zero), storico, tradizionale, <s>economico</s> (beh anche gratis non può essere, per chi ci avete preso, suvvia non siate taccagni), abbiamo la soluzione per voi!
+		</p>
+		<p class="sometext">Per il nostro progetto ci appelliamo agli ultimi superstiti veneziani - gli unici rimasti anche dopo il coronavirus, per esempio. E includiamo anche tutti gli amanti di venezia e chi ha intenzione a viverci, il luogo di nascita non si può scegliere ma quello dove si vive si può. <br>
+		Purtroppo siamo giovani, abbiamo perso da tempo la capacità di interagire con le persone, uscire in strada e fare cose davvero, siamo solo capaci a stare seduti dietro un computer tutto il giorno.
+		Ma a volte non tutto il male viene per nuocere, e visto anche il lockdown che ha costretto tutti a vivere in questo modo, abbiamo finalmente del tempo libero per i nostri progetti utopici, quindi proviamo a spiegarvi quello che vogliamo fare.<br>
+		La nostra idea vuole svilupparsi modularmente, riuscendo a creare un sistema flessibile che si può adattare a diverse circostanze, aiutando chi vive. Qui sotto proviamo a mostrarvi i moduli che abbiamo pensato. Dateci un'occhiata!</p>
+
+		<div class="awesomedrawing">
+			<!-- NOMI E STRATI -->
+			<div class="w3-col s5" style="height: 100%; margin-bottom: 1rem;">&nbsp;
+				<!-- LIVELLO -->
+				<div onclick="show('mappa')" class="w3-row">
+					<div class="w3-col s4">
+						<p class="lefttext" >Mappa Geografica</p>
+					</div>
+					<div class="w3-col s7 strato" id="mappabox" style="background-color: #DC4F22; height: 100%;">
+						&nbsp;
+					</div>
+				</div>
+				<!-- LIVELLO -->
+				<div onclick="show('indirizzo')" class="w3-row strato">
+					<div class="w3-col s4">
+						<p class="lefttext" id="awesome">Indirizzi</p>
+					</div>
+					<div class="w3-col s7 strato" style="background-color: #DC9322; height: 100%;">
+						&nbsp;
+					</div>
+				</div>
+				<!-- LIVELLO -->
+				<div onclick="show('interesse')" class="w3-row strato">
+					<div class="w3-col s4">
+						<p class="lefttext" id="awesome">Punti di Interesse</p>
+					</div>
+					<div class="w3-col s7 strato" style="background-color: #CFDC22">
+						&nbsp;
+					</div>
+				</div>
+				<!-- LIVELLO -->
+				<div onclick="show('percorsi')" class="w3-row strato">
+					<div class="w3-col s4">
+						<p class="lefttext" id="awesome">Percorsi</p>
+					</div>
+					<div class="w3-col s7 strato" style="background-color: #79DC22">
+						&nbsp;
+					</div>
+				</div>
+				<!-- LIVELLO -->
+				<div onclick="show('barca')" class="w3-row strato">
+					<div class="w3-col s4">
+						<p class="lefttext" id="awesome">In Barca</p>
+					</div>
+					<div class="w3-col s7 strato" style="background-color: #27DC22">
+						&nbsp;
+					</div>
+				</div>
+				<!-- LIVELLO -->
+				<div onclick="show('segnalazioni')" class="w3-row strato">
+					<div class="w3-col s4">
+						<p class="lefttext" id="awesome">Segnalazioni</p>
+					</div>
+					<div class="w3-col s7 strato" style="background-color: #22DC81">
+						&nbsp;
+					</div>
+				</div>
+				<!-- LIVELLO -->
+				<div onclick="show('comunita')" class="w3-row strato">
+					<div class="w3-col s4">
+						<p class="lefttext" id="awesome">Comunità</p>
+					</div>
+					<div class="w3-col s7 strato" style="background-color: #22DCC9">
+						&nbsp;
+					</div>
+				</div>
+				<!-- LIVELLO -->
+				<div onclick="show('eventi')" class="w3-row strato">
+					<div class="w3-col s4">
+						<p class="lefttext" id="awesome">Eventi</p>
+					</div>
+					<div class="w3-col s7 strato" style="background-color: #229CDC">
+						&nbsp;
+					</div>
+				</div>
+				<!-- LIVELLO -->
+				<div onclick="show('associazioni')" class="w3-row strato">
+					<div class="w3-col s4">
+						<p class="lefttext" id="awesome">Corsi e Associazioni</p>
+					</div>
+					<div class="w3-col s7 strato" style="background-color: #2247DC">
+						&nbsp;
+					</div>
+				</div>
+				<!-- LIVELLO -->
+				<div onclick="show('vicini')" class="w3-row strato">
+					<div class="w3-col s4">
+						<p class="lefttext" id="awesome">Buon Vicinato</p>
+					</div>
+					<div class="w3-col s7 strato" style="background-color: #5322DC">
+						&nbsp;
+					</div>
+				</div>
+
+
+			</div>
+			<!-- DYNAMIC CONTENTS -->
+			<div class="w3-col s7">
+
+				<!-- A DYNAMIC CONTENT THAT CAN DISAPPEAR -->
+				<div class="dyn-content" id="mappa" style="background-color: #DB886E">
+					<p class="dyn-title">IL CUORE DI VENEZIA</p>
+					<img src="img/vart.png" class="center" width=80%>
+					<p class="dyn-blabla">Una mappa geografica può essere uno strumento non solo bellissimo, ma anche incredibilmente potente. Non ci credete? Date un'occhiata ai prossimi livelli!</p>
+				</div>
+				<!-- A DYNAMIC CONTENT THAT CAN DISAPPEAR -->
+				<div class="dyn-content" id="indirizzo" style="background-color: #DCB16E">
+					<p class="dyn-title">SESTIERE, CAMPO, SALIZADA O SOTTOPORTEGO?</p>
+					<img src="img/ind.png" class="center" width=80%>
+					<p class="dyn-blabla">Venezia è unica, come sappiamo. Una cosa che sembra semplice, spesso si rivela non esserlo. Come per esempio cercare un indirizzo, un campiello, una corte sconta, o quel campo vicino alla chiesa che adesso non mi viene in mente. Il modulo relativo agli indirizzi risolverà questo problema.</p>
+				</div>
+				<!-- A DYNAMIC CONTENT THAT CAN DISAPPEAR -->
+				<div class="dyn-content" id="interesse" style="background-color: #D4DC6E">
+					<p class="dyn-title">CHIESE, MUSEI, BAR, OSPEDALI</p>
+					<img src="img/ind.png" class="center" width=80%>
+					<p class="dyn-blabla">Ma come sappiamo, a volte per orientarci a Venezia si usano riferimenti. Anche questi possono essere aggiunti all'occorrenza, rendendo la nostra mappa sempre più completa. Tutte le mappe hanno i bar, direte, cosa c'è di speciale? E cosa dite a proposito dei cestini, le fontane aperte, o le chiese (diremo noi)? </p>
+				</div>
+				<!-- A DYNAMIC CONTENT THAT CAN DISAPPEAR -->
+				<div class="dyn-content" id="percorsi" style="background-color: #A1DC6E">
+					<p class="dyn-title">QUARTA A DESTRA DOPO LA CHIESA, PRIMA A SINISTRA.. </p>
+					<img src="img/direz_c.png" class="center" width=50%>
+					<p class="dyn-blabla">Una delle cose più difficili è spiegare una strada. Ponti, callette, svolte a destra e a manca, scorciatoie, buona notte. Ma il nostro modulo risolverà anche questo problema, portandoti a destinazione sano e salvo. Ogni metro c'è un ponte e tu hai un sacco di valigie, dici? Ma certo, abbiamo un'opzione per calcolare la strada con meno ponti possibile, non ti preoccupare. Ah, acqua alta? Ma certo, grazie a una ricostruzione tridimensionale della città possiamo calcolare in pochi millisecondi il percorso migliore per arrivare a destinazione asciutto. Brutto? </p>
+				</div>
+				<!-- A DYNAMIC CONTENT THAT CAN DISAPPEAR -->
+				<div class="dyn-content" id="barca" style="background-color: #71DC6E">
+					<p class="dyn-title">IO VADO IN BARCA</p>
+					<img src="http://www.pngpix.com/wp-content/uploads/2016/10/PNGPIX-COM-Boat-PNG-Transparent-Image-1-500x305.png" class="center" width=50%>
+					<p class="dyn-blabla">Ottimo, vero spirito veneziano. Certamente saprai già tutte le strade, lungi da noi sollevare questo dubbio. Ma le ordinanze? I sensi unici? La larghezza dei canali, i divieti di sosta, le bricole? Dai, forse anche tu puoi trovare qualcosa per te in questo modulo.</p>
+				</div>
+				<!-- A DYNAMIC CONTENT THAT CAN DISAPPEAR -->
+				<div class="dyn-content" id="segnalazioni" style="background-color: #6EDCA6">
+					<p class="dyn-title">BRICOLE A TORXEO, E NISSUNI FA NIENTE</p>
+					<img src="https://citynews-veneziatoday.stgy.ovh/~media/original-hi/29390867113116/bricola-collage-3.jpg" class="center" width=70%>
+					<p class="dyn-blabla">I cittadini si lamentano del comune, il comune si lamenta dei cittadini. Sempre colpa di qualcun altro, storia già sentita. Ma forse è arrivato il momento di venirci incontro? Questo modulo si basa sull'idea di creare una maniera semplice ed efficace per tutti i residenti di inviare segnalazioni, e per chi è responsabile di ricevere un'informazione in maniera rapida e precisa, evitando una grande confusione.</p>
+				</div>
+				<!-- A DYNAMIC CONTENT THAT CAN DISAPPEAR -->
+				<div class="dyn-content" id="comunita" style="background-color: #6EDCD1">
+					<p class="dyn-title">L'UNIONE FA LA FORZA</p>
+					<img src="https://consnizza.esteri.it/consolato_nizza/resource/img/2019/11/venezia.jpg" class="center" width=70%>
+					<p class="dyn-blabla">Ora come non mai, è chiaro che le situazioni di emergenza diventeranno sempre più normali. Che sia acqua alta o coronavirus, una piattaforma per l'organizzazione e la divisione dei compiti può essere di grande aiuto. Questo modulo punta ad aiutare lo sviluppo e l'organizzazione in caso di emergenze.</p>
+				</div>
+				<!-- A DYNAMIC CONTENT THAT CAN DISAPPEAR -->
+				<div class="dyn-content" id="eventi" style="background-color: #6EB6DC">
+					<p class="dyn-title">A VENEZIA NON C'E MAI NIENTE DA FARE!</p>
+					<img src="https://www.zainoo.com/media/687.JPEG" class="center" width=70%>
+					<p class="dyn-blabla">O forse non hai cercato abbastanza? Non c'è problema che non possa essere risolto con una mappa, che funzioni come un calendario interattivo dove puoi vedere cosa sta succedendo e non perderti il prossimo aperiorto!</p>
+				</div>
+				<!-- A DYNAMIC CONTENT THAT CAN DISAPPEAR -->
+				<div class="dyn-content" id="associazioni" style="background-color: #6E84DC">
+					<p class="dyn-title">E SE VOLESSI USARLA COME PRIVATO?</p>
+					<img src="http://www.ilsestantenews.it/wp-content/uploads/2017/02/5218523102_626dff2976_b.jpg" class="center" width=70%>
+					<p class="dyn-blabla">Abbiamo pensato anche a te. Per piccole associazioni, volontariato, progetti, gruppi, corsi, e chi più ne ha più ne metta. Usando un account potrete creare eventi che saranno visibili solo dalle persone della vostra cerchia! Comodo, no?</p>
+				</div>
+				<!-- A DYNAMIC CONTENT THAT CAN DISAPPEAR -->
+				<div class="dyn-content" id="vicini" style="background-color: #8B6EDC">
+					<p class="dyn-title">QUESTIONE DI BUON VICINATO</p>
+					<img src="https://thumbs.dreamstime.com/b/case-di-colore-sull-isola-di-burano-vicino-venezia-43026851.jpg" class="center" width=70%>
+					<p class="dyn-blabla">Ultimo ma non in ordine di importanza, l'idea del buon vicinato torna di moda. Hai perso qualcosa, hai bisogno di qualcuno che ti presti il trapano senza doverlo comprare per installare uno scaffale, o semplicemente vuoi metterti a disposizione per aiutare il tuo vicino a portare fuori il cane o a fare la spesa? Questo modulo ti aiuta a vincere la timidezza e conoscere i tuoi vicini. Venezia è più bella se ci si vive per più di qualche giorno!</p>
+				</div>
+
+			</div>
+		</div>
+
+		&nbsp;
+
+		<div class="newsec">
+			<p class="sometext">
+			E ora, cosa rimane da fare? tiremo fora i schei, e torniamo a venezia!
+			</p>
+		</div>
+	</div>
+
+
+	<script src="js/v4w.js"></script>
+	<script>
+		hideAll();
+		show('mappa');
+	</script>
+</body>
+	
+</html>
