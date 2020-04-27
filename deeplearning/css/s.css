@@ -54,4 +54,59 @@
 .slidewithalotoftext {
 	font-size: 2.0rem;
 }
+.source {
+	font-size: 1.5rem;
+	font-weight: 100;
+}
+.bigger {
+	font-size: 2.5rem;
+	font-weight: 600;
+}
+.smaller {
+	font-size: 2.2rem;
+	font-weight: 600;
+}
+.leftcol {
+	position: absolute;
+	left: 0%;
+	right: 50%;
+}
+.rightcol {
+	position: absolute;
+	left: 50%;
+	right: 00%;
+}
+.firstof3 {
+	padding: 1rem;
+	position: absolute;
+	left: 0%;
+	right: 66%;
+}
+.secondof3 {
+	padding: 1rem;
+	position: absolute;
+	left: 33%;
+	right: 33%;
+}
+.thirdof3 {
+	padding: 1rem;
+	position: absolute;
+	left: 66%;
+	right: 0%;
+}
+.spacetop {
+	padding-top: 5rem;
+}
+.arrowforw {
+	left: 20%;
+	position: absolute;
+	top:65%;
+}
+.arrowback {
+	left: 20%;
+	position: absolute;
+	top:365%;
+	-webkit-animation: moveRight 5s;
+	animation: linear moveRight 5s;
+}
 
