@@ -138,7 +138,28 @@ body, html {height: 100%}
 	margin-top: 1rem;
 	padding-top: 1rem;
 }
-
+.scelta {
+	padding: 1rem;
+	font-weight: 800;
+}
+#vav {
+	background-color: aqua;
+}
+#idigt {
+	background-color: green;
+}
+#timl {
+	background-color: coral;
+}
+.imgcnt {
+	padding: 2rem;
+	text-align: center;
+ 	align-content: center;
+}
+.cat {
+	border-radius: 1rem;
+	min-height: 4rem;
+}
 .strato {
 	min-height: 2.5rem;
 	transition: width 0.5s, padding 0.5s;

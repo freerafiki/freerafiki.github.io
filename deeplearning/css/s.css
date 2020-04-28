@@ -97,6 +97,10 @@
 .spacetop {
 	padding-top: 5rem;
 }
+.col4 {
+	width: 1rem;
+	display: inline;
+}
 .arrowforw {
 	left: 20%;
 	position: absolute;
