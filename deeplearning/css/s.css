@@ -54,6 +54,10 @@
 .slidewithalotoftext {
 	font-size: 2.0rem;
 }
+.slidewithreallyalotoftext {
+	font-size: 1.5rem;
+	font-weight: 100;
+}
 .source {
 	font-size: 1.5rem;
 	font-weight: 100;
