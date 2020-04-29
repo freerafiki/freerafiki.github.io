@@ -100,9 +100,17 @@ function hideCategories() {
 	for (i = 0; i < categories.length; i++) {
 		categories[i].style.display	= "none";
 	}
+	var catnames = document.getElementsByClassName("catnames");
+	for (i = 0; i < catnames.length; i++) {
+		if (catnames[i].classList.contains("active")) {
+			catnames[i].classList.remove("active");
+		}
+	}
 }
 
 function changeCategory(catid) {
 	hideCategories();
 	document.getElementById(catid.concat("t")).style.display = "block";
+	document.getElementById(catid).classList.add("active");
+	
 }
