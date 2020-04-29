@@ -142,15 +142,6 @@ body, html {height: 100%}
 	padding: 1rem;
 	font-weight: 800;
 }
-#vav {
-	background-color: aqua;
-}
-#idigt {
-	background-color: green;
-}
-#timl {
-	background-color: coral;
-}
 .imgcnt {
 	padding: 2rem;
 	text-align: center;
@@ -159,6 +150,21 @@ body, html {height: 100%}
 .cat {
 	border-radius: 1rem;
 	min-height: 4rem;
+	opacity: 0.85;
+	background-color: currentColor;
+	border: 1px solid white;
+}
+.col {
+	border: 3px solid darkgrey;
+	padding: 1rem;
+	border-radius: 1rem;
+	text-align: center;
+}
+.cattitle {
+	color: white;
+}
+.catcont {
+	padding: 2rem;
 }
 .strato {
 	min-height: 2.5rem;

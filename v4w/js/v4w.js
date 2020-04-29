@@ -94,3 +94,15 @@ function show(dynid) {
 			blockToBeShown.classList.remove("fadingOut");
 		}
 }
+
+function hideCategories() {
+	var categories = document.getElementsByClassName("catcont");
+	for (i = 0; i < categories.length; i++) {
+		categories[i].style.display	= "none";
+	}
+}
+
+function changeCategory(catid) {
+	hideCategories();
+	document.getElementById(catid.concat("t")).style.display = "block";
+}
