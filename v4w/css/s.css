@@ -141,6 +141,8 @@ body, html {height: 100%}
 .scelta {
 	padding: 1rem;
 	font-weight: 800;
+	margin: 0 auto;
+	width: 100vw;
 }
 .imgcnt {
 	padding: 2rem;
@@ -156,6 +158,10 @@ body, html {height: 100%}
 }
 .catnames:hover {
 	opacity: 1;
+}
+.source {
+	text-align: center;
+	font-size: 0.9rem;
 }
 .active {
 	opacity: 1;
