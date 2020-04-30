@@ -29,6 +29,7 @@
 	color:white;
 	font-size: 1.125rem;
 	opacity: 1;
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 .normagin {
 	margin: 0rem 0rem!important;
@@ -44,9 +45,18 @@ hr {
 	width: 50%;
 }
 
+.btn-orange {
+	background-color: orangered;
+	color: white;
+}
+.btn-green {
+	background-color: forestgreen;
+	color: white;
+}
+
 /* SCIENCE */
 #science {
-	background-image: url(../img/science.png);
+	background-image: url(../img/science.jpg);
 	height: 22rem;
 }
 
@@ -54,9 +64,9 @@ hr {
 	background-color:darkgreen;
 }
 
-/* SPIELE */
-#spiele {
-	background-image: url(https://images.unsplash.com/photo-1495055154266-57bbdeada43e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=900&q=60);
+/* MAPS */
+#maps {
+	background-image: url(../img/vart.png);
 	height: 22rem;
 }
 
@@ -64,9 +74,9 @@ hr {
 	background-color:blue;
 }
 
-/* READS */
-#read {
-	background-image: url(https://images.unsplash.com/photo-1546561892-65bf811416b9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=900&q=60);
+/* DEEPLEARNING */
+#deep {
+	background-image: url(../img/dl.jpg);
 	height: 22rem;
 }
 
@@ -76,7 +86,7 @@ hr {
 
 /* MOVIES */
 #movies {
-	background-image: url(https://images.unsplash.com/photo-1546561892-65bf811416b9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=900&q=60);
+	background-image: url(../img/lhit.jpg);
 	height: 22rem;
 }
 
@@ -84,9 +94,9 @@ hr {
 	background-color:indigo;
 }
 
-/* DEEP LEARNING */
-#deepl {
-	background-image: url(https://images.unsplash.com/photo-1546561892-65bf811416b9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=900&q=60);
+/* WANDELWURFEL */
+#wwl {
+	background-image: url(../img/cover.jpg);
 	height: 22rem;
 }
 
