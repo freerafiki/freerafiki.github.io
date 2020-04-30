@@ -2,7 +2,7 @@
 	margin: 0rem 0rem !important;
   background-position: center;
   background-size: cover;
-	height: 20rem;
+	height: 30rem;
 	font-weight: 500;
 	font-size: 0.125rem;
 	opacity: 0.6;
@@ -14,7 +14,7 @@
 }
 
 .projectbg {
-	
+	min-height: 22rem;
 }
 
 .projectbg:hover > div {
@@ -102,5 +102,18 @@ hr {
 
 #bgdl {
 	background-color:indigo;
+}
+
+.feet {
+	align-content: center;
+	text-align: center;
+	width: 100px;
+	color: darkblue;
+	background-color: white;
+	display: inline;
+	font-size: 0.8rem;
+}
+.footnote {
+	padding-top: 1rem;
 }
 
