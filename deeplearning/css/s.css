@@ -116,4 +116,13 @@
 	-webkit-animation: moveRight 5s;
 	animation: linear moveRight 5s;
 }
+.projtitle {
+	font-weight: 900;
+	font-size: 1.3rem;
+}
+.sephr {
+	border: none;
+	height: 10px;
+	color: black;
+}
 
