@@ -122,7 +122,8 @@
 }
 .sephr {
 	border: none;
-	height: 10px;
-	color: black;
+	height: 0.1rem;
+	color: darkslategrey;
+	background-color: darkslategrey;
 }
 
