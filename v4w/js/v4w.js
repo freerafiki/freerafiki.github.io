@@ -112,5 +112,25 @@ function changeCategory(catid) {
 	hideCategories();
 	document.getElementById(catid.concat("t")).style.display = "block";
 	document.getElementById(catid).classList.add("active");
-	
+}
+
+/* COLLETTIVO VENEZIA - FILTRA PER CATEGORIA */
+function filterCategory(category, contextName) {
+	var categories_in_the_page = document.getElementsByClassName("category");
+	for (i = 0; i < categories_in_the_page.length; i++) {
+			categories_in_the_page[i].style.opacity = 0.5;
+	}
+	document.getElementById(category).style.opacity = 1;
+	hideAllEntries(contextName);
+	var entry_for_the_category = document.getElementsByClassName(category);
+	for (i = 0; i < entry_for_the_category.length; i++) {
+			entry_for_the_category[i].style.display = "inline";
+	}
+}
+
+function hideAllEntries(contextName) {
+	var entries = document.getElementsByClassName(contextName);
+	for (i = 0; i < entries.length; i++) {
+			entries[i].style.display = "none";
+	}
 }

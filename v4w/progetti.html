@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Jekyll v3.8.6">
+    <title>Progetti - CollettivoVenezia</title>
+		<link rel="icon" href="img/cv_logo.png">
+    <link rel="stylesheet" href="css/cv.css">
+
+    <!-- Bootstrap core CSS -->
+		<link href="css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	</head>
+	<body class="text-center">
+
+		
+		<div class="md-flex w-100 h-100 p-3 mx-auto flex-column">
+			<header class="masthead dark mb-auto">
+				<div class="inner">
+					<h3 class="masthead-brand">CollettivoVenezia</h3>
+					<nav class="nav nav-masthead justify-content-center">
+						<a class="nav-link" href="collettivovenezia.html">Home</a>
+						<a class="nav-link" href="filosofia.html">Filosofia</a>
+						<a class="nav-link active dark" href="progetti.html">Progetti</a>
+						<a class="nav-link" href="utopie.html">Utopie</a>
+						<a class="nav-link" href="noi.html">Chi Siamo</a>
+					</nav>
+				</div>
+			</header>
+			
+
+			<div class="container-cv">
+			<h1 class="cover-heading">Cosa facciamo?</h1>
+				<p class="lead">Sebbene tutto quello che presentiamo sia in divenire, le idee fioccano e i progetti non mancano. <br>
+				Per saperne di piu riguardo a un particolare progetto, dai un'occhiata alla sua pagina!
+				</p>
+				<p class="lead filter">
+					<a onclick="filterCategory('proj', 'proj')"><span class="category" id="proj">tutti </span></a> / 
+					<a onclick="filterCategory('ready', 'proj')"><span class="category" id="ready">disponibili</span></a> / 
+					<a onclick="filterCategory('beta', 'proj')"><span class="category" id="beta">in fase di test</span></a> / 
+					<a onclick="filterCategory('alpha', 'proj')"><span class="category" id="alpha">in fase di sviluppo</span></a> / 
+					<a onclick="filterCategory('todo', 'proj')"><span class="category" id="todo">da sviluppare</span> </a>/ 
+					<a onclick="filterCategory('hope', 'proj')"><span class="category" id="hope">sarebbe bello</span> </a>
+				</p>
+				<div class="row">
+					<div class="col-md-4 proj alpha">
+						<div class="my-3 py-3">
+							<h2 class="display-5">De Qua</h2>
+							<a href="dequa.html"><img src="img/zampa.jpg" class="project-icon"/></a>
+							<p class="lead">Dove andiamo oggi?<br>Una m(app)a interattiva per riscoprire Venezia</p>
+						</div>
+					</div>
+					
+					<div class="col-md-4 proj todo">
+						<div class="my-3 p-3">
+							<h2 class="display-5">Premando</h2>
+							<a href="premando.html"><img src="img/premando2.png" class="project-icon"/></a>
+							<p class="lead">Pizza Express?<br>Te la portiamo a casa in barca!</p>
+						</div>
+					</div>
+					
+					<div class="col-md-4 proj todo">
+						<div class="my-3 py-3">
+							<h2 class="display-5">Impariamo</h2>
+							<a href="edu.html"><img src="img/books.jpg" class="project-icon"/></a>
+							<p class="lead">A scuola per il futuro!<br>I corsi per imparare quello che non hai mai osato chiedere!</p>
+						</div>
+					</div>
+				
+					<div class="col-md-4 proj hope">
+						<div class="my-3 py-3">
+							<h2 class="display-5">(S)Portando</h2>
+							<a href="sport.html"><img src="img/sport.jpg" class="project-icon"/></a>
+							<p class="lead">Cosa può nascere da un incrocio tra nerd e finti sportivi?</p>
+						</div>
+
+					</div>
+					<div class="col-md-4 proj todo">
+						<div class="my-3 p-3">
+							<h2 class="display-5">Ora et Labora</h2>
+							<a href="oraetlabora.html"><img src="img/off.JPG" class="project-icon"/></a>
+							<p class="lead">Visita il primo co-working space isolano.</p>
+						</div>
+
+					</div>
+					<div class="col-md-4 proj hope">
+						<div class="my-3 py-3">
+							<h2 class="display-5">A cosa serve(r)?</h2>
+							<a href="server.html"><img src="img/hacker.jpg" class="project-icon"/></a>
+							<p class="lead">Ti sei sempre chiesto cos'è davvero un server? O chi manipola tutti i dati che carichi online? </p>
+						</div>
+					</div>
+				
+				</div>
+			</div>
+
+			<footer class="mastfoot dark mt-auto">
+				<div class="inner">
+					
+				</div>
+			</footer>
+		</div>
+		<script src="js/v4w.js">
+			
+		</script>
+		<script>filterCategory('proj', 'proj');</script>
+	</body>
+</html>
+
