@@ -11,80 +11,154 @@
 
     <!-- Bootstrap core CSS -->
 		<link href="css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-		<!-- W3S CSS -->
-		<link href="css/w3s.css" rel="stylesheet">
-		<link href="css/s.css" rel="stylesheet">
+		<!-- BIG CSS -->
+		<link href="css/father.css" rel="stylesheet">
+		<!-- GITHUB FORK RIBBON -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-fork-ribbon-css/0.2.3/gh-fork-ribbon.min.css" />
   </head>
-<body>
-	<!-- Main jumbotron for a primary marketing message or call to action -->
-	<div class="projectbg" id="bgsc">
-		<div class="project" id="science">
-			<div class="coloroverlay">
-				<div class="textlayer">
-					<p class="w3-xxlarge">PLENOPTIC TOOLBOX 2.0</p>
-					<hr/>
-					<p>A python framework for plenoptic images. </p>
-					<p><a class="btn btn-primary btn-lg" href="#" role="button">Take a look &raquo;</a></p>
-				</div>
+<body class="bgimg box">
+	
+	<div class="d-flex w-100 h-100 p-3 mx-auto flex-column">
+		<header class="masthead light mb-auto">
+			<div class="inner">
+				<h3 class="masthead-brand"><img src="v4w/img/cv_logo.png" height="50rem;">Rafiki</h3>
+				<!-- TOP RIGHT PART NOT NEEDED NOW
+				<nav class="nav nav-masthead justify-content-center">
+					<a class="nav-link active light" href="#">Home</a>
+					<a class="nav-link" href="progetti.html">Who</a>
+				</nav>
+				-->
 			</div>
+		</header>
+	
+		<a class="github-fork-ribbon right-top" href="https://url.to-your.repo" data-ribbon="Check it on GitHub" title="Check it on GitHub">Check it on GitHub</a>
+		
+		<div class="front-logo">
+			<img src="v4w/img/cv_logo.png" width="200rem;">
+			<br>
+			<h1 class="front-text">a bunch of random projects</h1>
 		</div>
-	</div>
-	<div class="row nomargin">
-		<div class="projectbg col-md-7" id="bgsp">
-			<div class="project" id="maps">
-				<div class="coloroverlay">
-					<div class="textlayer">
-						<p class="w3-xxlarge">MAPS</p>
-						<hr/>
-						<p>A python-powered project about the maps of Venice</p>
-						<p><a class="btn btn-green btn-lg" href="#" role="button">Website &raquo;</a>&nbsp; <a class="btn btn-green btn-lg" href="#" role="button">Source Code &raquo;</a></p>
+		<div class="vspace"></div>
+		
+		<div class="projects">
+			<div class="filter-bar">
+				<div class="row">
+					<div class="left-col filter-text">filter for category:</div>
+					<div class="middle-col"></div>
+					<div class="right-col">
+						<a onclick="filterCategory('proj', 'proj')"><span class="category" id="proj">all </span></a> / 
+						<a onclick="filterCategory('progr', 'proj')"><span class="category" id="progr">scientific</span></a> / 
+						<a onclick="filterCategory('pazzo', 'proj')"><span class="category" id="pazzo">funny</span></a> / 
+						<a onclick="filterCategory('sport', 'proj')"><span class="category" id="sport">serious</span></a> / 
+						<a onclick="filterCategory('marketing', 'proj')"><span class="category" id="marketing">photos</span> </a>/ 
+						<a onclick="filterCategory('web', 'proj')"><span class="category" id="web">drawing</span> </a>/
+						<a onclick="filterCategory('design', 'proj')"><span class="category" id="design">coding</span> </a>/
+						<a onclick="filterCategory('gis', 'proj')"><span class="category" id="gis">websites</span></a> /
+						<a onclick="filterCategory('gis', 'proj')"><span class="category" id="gis">games</span></a>
+					</div>
+					<div class="left-col filter-text">filter for language:</div>
+					<div class="middle-col"></div>
+					<div class="right-col">
+						<a onclick="filterCategory('proj', 'proj')"><span class="category" id="proj">all </span></a> / 
+						<a onclick="filterCategory('progr', 'proj')"><span class="category" id="progr">python</span></a> / 
+						<a onclick="filterCategory('pazzo', 'proj')"><span class="category" id="pazzo">HTML</span></a> / 
+						<a onclick="filterCategory('sport', 'proj')"><span class="category" id="sport">CSS</span></a> / 
+						<a onclick="filterCategory('marketing', 'proj')"><span class="category" id="marketing">photos</span> </a>/ 
+						<a onclick="filterCategory('web', 'proj')"><span class="category" id="web">JavaScript</span> </a>/
+						<a onclick="filterCategory('design', 'proj')"><span class="category" id="design">C#</span> </a>
+					</div>
+					<div class="left-col filter-text">filter for tool:</div>
+					<div class="middle-col"></div>
+					<div class="right-col">
+						<a onclick="filterCategory('proj', 'proj')"><span class="category" id="proj">all </span></a> / 
+						<a onclick="filterCategory('progr', 'proj')"><span class="category" id="progr">Atom</span></a> / 
+						<a onclick="filterCategory('pazzo', 'proj')"><span class="category" id="pazzo">git</span></a> / 
+						<a onclick="filterCategory('sport', 'proj')"><span class="category" id="sport">Bootstrap</span></a> / 
+						<a onclick="filterCategory('marketing', 'proj')"><span class="category" id="marketing">Final Cut Pro</span> </a>/ 
+						<a onclick="filterCategory('web', 'proj')"><span class="category" id="web">Scribus</span> </a>/
+						<a onclick="filterCategory('design', 'proj')"><span class="category" id="design">Unity</span> </a>
 					</div>
 				</div>
 			</div>
-		</div>
-		<div class="projectbg col-md-5" id="bgrd">
-			<div class="project" id="deep">
-				<div class="coloroverlay">
-					<div class="textlayer">
-						<p class="w3-xxlarge">DEEP LEARNING</p>
-						<hr/>
-						<p>Materials for a deep learning course.</p>
-						<p><a class="btn btn-orange btn-lg" href="#" role="button">See the course &raquo;</a></p>
+			
+			<div class="vspace"></div>
+			
+			<div class="proj-table">
+			
+				<div class="row">
+					<div class="col-md-4 proj">
+						<p class="proj-title">Plenoptic Toolbox</p>
+						<img class="proj-icon" src="img/dragon_gif_transparent.gif">
+						<p class="proj-descr">A python toolbox to work with plenoptic images <br>
+							<span class="python">python</span></p>
 					</div>
+					<div class="col-md-4 proj">
+						<p class="proj-title">De Qua</p>
+						<img class="proj-icon" src="v4w/img/dequa_logo_v1.png">
+						<p class="proj-descr">A python powered geographic web app for Venice <br>
+							<span class="python">python</span>
+							<span class="html">HTML</span>
+							<span class="css">CSS</span>
+							<span class="js">JavaScript</span>
+						</p>
+					</div>
+					<div class="col-md-4 proj">
+						<p class="proj-title">Deep Learning Course</p>
+						<img class="proj-icon" src="img/dl.jpg">
+						<p class="proj-descr">A summary page for a deep learning course based on the popular coursera specialization<br>
+							<span class="html">HTML</span>
+							<span class="css">CSS</span>
+							<span class="js">JavaScript</span>
+						</p>
+					</div>
+					<div class="col-md-4 proj">
+						<p class="proj-title">Project Website Template</p>
+						<img class="proj-icon" src="img/cover.jpg">
+						<p class="proj-descr">Combining <a href="">Bootstrap</a> themes to create template for a project website<br>
+							<span class="html">HTML</span>
+							<span class="css">CSS</span>
+							<span class="js">JavaScript</span>
+						</p>
+					</div>
+					<div class="col-md-4 proj">
+						<p class="proj-title">Space Shooter</p>
+						<img class="proj-icon" src="img/dl.jpg">
+						<p class="proj-descr">A simple space shooter game made in Unity<br>
+							<span class="c-sharp">C#</span>
+						</p>
+					</div>
+					<div class="col-md-4 proj">
+						<p class="proj-title">Wandelwürfel</p>
+						<img class="proj-icon" src="https://spielinkiel.github.io/img/logo_v1.png">
+						<p class="proj-descr">A collection of critical-thinking board games<br>
+							<span class="life">Real-life Project</span>
+						</p>
+					</div>
+					<div class="col-md-4 proj">
+						<p class="proj-title">Lucky Hit</p>
+						<img class="proj-icon" src="img/lhit.gif">
+						<p class="proj-descr">A tragi-comic movie about suicide.<br>
+							<span class="life">Real-life Project</span>
+						</p>
+					</div>
+					<div class="col-md-4 proj">
+						<p class="proj-title">HEIN</p>
+						<img class="proj-icon" src="img/hein.gif">
+						<p class="proj-descr">A 2.5D puzzle game where a Robot has to find his lost name.<br>
+							<span class="c-sharp">C#</span>
+						</p>
+					</div>
+					
 				</div>
 			</div>
+		
 		</div>
-	</div>
-	<div class="row nomargin">
-		<div class="projectbg col-md-5" id="bgmv">
-			<div class="project" id="movies">
-				<div class="coloroverlay">
-					<div class="textlayer">
-						<p class="w3-xxlarge">LUCKY HIT</p>
-						<hr/>
-						<p>A short tragicomic movie.</p>
-						
-						<p><a class="btn btn-primary btn-lg" href="#" role="button">Watch the Movie &raquo;</a></p>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="projectbg col-md-7" id="bgdl">
-			<div class="project" id="wwl">
-				<div class="coloroverlay">
-					<div class="textlayer">
-						<p class="w3-xxlarge">WANDELWÜRFEL</p>
-						<hr/>
-						<p>A project about developing games which make you re-think.</p>
-						<p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<div class="feet">
+	
+	<div class="footer">
 		<p class="footnote"><img src="img/Copyleft.svg" height=12rem;> Copyleft 2020 - Impressum - Source</p>
 	</div>
+	
+	</div>
+		
 </body>
 </html>

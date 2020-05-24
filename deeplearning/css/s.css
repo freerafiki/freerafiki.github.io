@@ -132,4 +132,8 @@
 .left {
 	text-align: left !important;
 }
+.img-slide {
+	border: 0px;
+	background-color: aliceblue;
+}
 
