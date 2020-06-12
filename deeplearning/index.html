@@ -90,7 +90,7 @@
 				<li><a href="https://colab.research.google.com/notebooks/intro.ipynb">Google Colab:</a> collaborative  coding environment with access to GPU computing power. We will use this during the course - it is strictly related to the coursera courses and provided there as a tool to complete the assignment. It uses <a href="https://ipython.org/notebook.html">Python Notebooks</a> to allow the creation of an interactive document where code and text can be combined.</li>
 				<li>Python Notebooks can also be used offline with <a href="https://jupyter.org/">Project Jupyter</a>, <a href="https://jupyter.org/install">installing it on your own computer</a>, and notebooks can be uploaded to github <a href="https://help.github.com/en/github/managing-files-in-a-repository/working-with-jupyter-notebook-files-on-github">and they will be rendered as <i>static HTML</i></a>. That means that images and plot you made will be also visibles from others. <br>
 				If you want it to be interactive, <a href="https://mybinder.org/">Binder</a> is an awesome tool that allows to do that very quickly, and support also <a href="https://realpython.com/python-virtual-environments-a-primer/">virtual environments</a>.</li>
-				<li>Kaggle: Environment for <a href="https://www.kaggle.com/datasets">dataset</a>, <a href="https://www.kaggle.com/notebooks">notebooks</a> and competition for Deep Learning. It is very easy to connect with Google Colab. <a href="https://www.kaggle.com/general/51898">Here a discussion</a> and <a href="https://medium.com/analytics-vidhya/how-to-fetch-kaggle-datasets-into-google-colab-ea682569851a">here an article</a> explaining step by step</li>
+				<li>Kaggle: Environment for <a href="https://www.kaggle.com/datasets">dataset</a>, <a href="https://www.kaggle.com/notebooks">notebooks</a> and competitions for Deep Learning. It is very easy to connect with Google Colab. <a href="https://www.kaggle.com/general/51898">Here a discussion</a> and <a href="https://medium.com/analytics-vidhya/how-to-fetch-kaggle-datasets-into-google-colab-ea682569851a">here an article</a> explaining step by step</li>
 			</ul>
 			</div>
 		</div>
@@ -138,14 +138,15 @@
 			<!-- WEEK 5 -->
 			<a onclick="toggleWeek('5')"><div class="week"> <span class="symbol" id="symb5">&#9658;</span><b>&nbsp;Week 5 - Deep Neural Networks - 18.05</b></div></a>
 			<p class="weektext weekcontent" id="week5">
-				Deep neural network. First example of generalizing a neural network with L layers. Discussion and choice about the projects, presentation of the Hackathon. Quick overview of different network architectures and when they may be used. End of the first Coursera course.
+				Deep neural network. First example of generalizing a neural network with L layers. Discussion and choice about the projects, presentation of the Hackathon. Quick overview of different network architectures and when they may be used. End of the first Coursera course.<br>
 				<b>Resources:</b> <a href="weeks/week5.html">Slides</a><br>
+				<b>Paper of the week:</b> <a href="http://proceedings.mlr.press/v15/coates11a.html"><i>An analysis of single-layer networks in unsupervised feature learning</i></a>, A. Coates, Honglak Lee and Andrew Y. Ng<i>, Proceedings of the Fourteenth International Conference on Artificial Intelligence and Statistics, PMLR 15:215-223, 2011.</i>
 			</p>
 			
 			<!-- WEEK 6 -->
 			<a onclick="toggleWeek('6')"><div class="week"> <span class="symbol" id="symb6">&#9658;</span><b>&nbsp;Week 6 - Practical Aspects of Deep Learning - 25.05</b></div></a>
 			<p class="weektext weekcontent" id="week6">
-				Practical hints about initialization and regularization techniques to avoid overfitting and improving the training of a neural network.
+				Practical hints about initialization and regularization techniques to avoid overfitting and improving the training of a neural network.<br>
 				<b>Resources:</b> <a href="weeks/week6.html">Slides</a><br>
 				<b>Paper of the week:</b> <a href="https://papers.nips.cc/paper/5423-generative-adversarial-nets"><i>Generative Adversarial Nets</i></a>, Ian J. Goodfellow, Jean Pouget-Abadie, Mehdi Mirza, Bing Xu, David Warde-Farley, Sherjil Ozair, Aaron Courville, Yoshua Bengio, <i>NIPS'14: Proceedings of the 27th International Conference on Neural Information Processing Systems - Volume 2December 2014 Pages 2672–2680</i>
 			</p>
@@ -153,21 +154,23 @@
 			<!-- WEEK 7 -->
 			<a onclick="toggleWeek('7')"><div class="week"> <span class="symbol" id="symb7">&#9658;</span><b>&nbsp;Week 7 - Optimization Algorithms - 01.06</b></div></a>
 			<p class="weektext weekcontent" id="week7">
-				Mini-batches, Momentum, RMSProp and AdamOptimizer: an overview of optimization algorithm to train faster neural networks. 
+				Mini-batches, Momentum, RMSProp and AdamOptimizer: an overview of optimization algorithm to train faster neural networks. <br>
 				<b>Resources:</b> <a href="weeks/week7.html">Slides</a><br>
-				<b>Paper of the week:</b> <a href="https://arxiv.org/abs/1906.02243"><i>Energy and Policy Considerations for Deep Learning in NLP</i></a>, Emma Strubell, Ananya Ganesh and Andrew McCallum, <i> 57th Annual Meeting of the Association for Computational Linguistics (ACL). Florence, Italy. July 2019</i>
+				<b>Paper of the week:</b> <a href="https://arxiv.org/abs/1906.02243"><i>How Does Batch Normalization Help Optimization?</i></a>, Emma Strubell, Ananya Ganesh and Andrew McCallum, <i> 57th Annual Meeting of the Association for Computational Linguistics (ACL). Florence, Italy. July 2019</i>
 			</p>
 			
 			<!-- WEEK 8 -->
 			<a onclick="toggleWeek('8')"><div class="week"> <span class="symbol" id="symb8">&#9658;</span><b>&nbsp;Week 8 - Hyperparameter Tuning - 08.06</b></div></a>
 			<p class="weektext weekcontent" id="week8">
+				Quick overview of the projects, report from Hackathon, discussion about batch normalization and hyperparameters search, first assignment using Tensorflow to create a small neural network. Small discussion about Tensorflow ideas and modalities and difference between 1.0 and 2.0 versions.
 				<b>Resources:</b> <a href="weeks/week8.html">Slides</a><br>
+				<b>Paper of the week:</b> <a href="https://arxiv.org/abs/1805.11604"><i>Energy and Policy Considerations for Deep Learning in NLP</i></a>, Shibani Santurkar, Dimitris Tsipras, Andrew Ilyas, Aleksander Madry,<i> Thirty-second Conference on Neural Information Processing Systems, NeurIPS 2018</i>
 			</p>
 			
 			<!-- WEEK 9 -->
-			<a onclick="toggleWeek('3')"><div class="week"> <span class="symbol" id="symb9">&#9658;</span><b>&nbsp;Week 9 - Machine Learning Strategy 1 - 15.06</b></div></a>
+			<a onclick="toggleWeek('9')"><div class="week"> <span class="symbol" id="symb9">&#9658;</span><b>&nbsp;Week 9 - Machine Learning Strategy 1 - 15.06</b></div></a>
 			<p class="weektext weekcontent" id="week9">
-				<a>Slides</a><br>
+				<b>Resources:</b> <a href="#">Slides</a><br>
 			</p>
 			
 			<!-- WEEK 10 -->
@@ -188,8 +191,16 @@
 		<div class="projects" id="projectsid">
 			<p class="titletext"><b>Projects</b></p>
 			<p class="expltext">Here we give an overview of the projects that will be carried out during the course. It will be updated when the projects start.</p>
-			<p class="projtitle"><b>&#9658; Automatization and Control for a Plant Environment (IDEA)</b></p>
-			<p class="expltext">The idea is about learning what a plant needs in terms of water and light, and use this knowledge to automate an environment that takes care of some plants. More details in the course.</p>
+			<p class="projtitle"><b>&#9658; Learning to predict DNA-Binding</b></p>
+			<p class="expltext">Using DNA-Binding data to train the network, the aim is to be able to predict the amount of binding on new data on different samples. More details at the end of the course.</p>
+			<p class="projtitle"><b>&#9658; Surf Spots Prediction</b></p>
+			<p class="expltext">Using data from the last 4 years of the well-known Windfinder website, the project consists in creating a model able to predict whether the surf spot quality for the next day(s). Will be ready just in time for the summer! More details at the end of the course.</p>
+			<p class="projtitle"><b>&#9658; Fake News</b></p>
+			<p class="expltext">A project about classification of fake news. Initially using datasets from the web, with the possibility to extend to a more handmade dataset. Is this actually true or just a fake news? Ask the network! More details at the end of the course.</p>
+			<p class="projtitle"><b>&#9658; Credit Card Fraud Detection</b></p>
+			<p class="expltext">Can the network detect if the transaction is real or a fraud? More details at the end of the course.</p>
+			<p class="projtitle"><b>&#9658; Bakery Prediction</b></p>
+			<p class="expltext">After pandemic time, patterns are not the same anymore. How will the network adapt to this? More details at the end of the course.</p>
 		</div>
 		
 		<hr class="sephr">
