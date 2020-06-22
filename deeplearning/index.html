@@ -82,7 +82,7 @@
 			
 			<div class="tools">
 			<p class="subtitletext">Useful tools:</p>
-			<ul>
+			<ul class="expltext">
 				<li><a href="https://github.com/">Github</a> and <a href="https://about.gitlab.com/">Gitlab:</a> online hosting for repositories with version control using <a href="https://git-scm.com/">git</a> (this may be annoying at the beginning, but then it's great!). <br>
 				They are very similar, with small differences that may be subjective. Lately gitlab has been growing a lot and it may offer more options for deployment and testing of the code.<br>
 				I give here references to github, yet the same things can be made also with gitlab, the choice is yours.<br>
@@ -95,9 +95,9 @@
 			</div>
 		</div>
 		
-		<hr class="sephr">
+		<hr class="sephr" id="weeksid">
 		
-		<div class="weeks" id="weeksid">
+		<div class="weeks" >
 			<p class="titletext"><b>Weekly Summary</b></p>
 			<p class="expltext">The course takes place every week. Here a recap of what happened - what is planned and related resources.</p>
 			<!-- WEEKS -->
@@ -170,13 +170,17 @@
 			<!-- WEEK 9 -->
 			<a onclick="toggleWeek('9')"><div class="week"> <span class="symbol" id="symb9">&#9658;</span><b>&nbsp;Week 9 - Machine Learning Strategy 1 - 15.06</b></div></a>
 			<p class="weektext weekcontent" id="week9">
-				<b>Resources:</b> <a href="weeks/week9.html">Slides</a><br>
+				Talk about how to structure the training, test and validation set, and more general on how to structure the whole project.<br>
+				Since there were no programming assignment for this week, walkthrough an LSTM tutorial on time series.<br>
+				<b>Resources:</b> <a href="weeks/week9.html">Slides</a>, <a href="https://github.com/freerafiki/Notebooks/blob/master/DeepLearning/Tutorial_LSTM_%5Bedit%5D.ipynb">Notebook</a><br>
 			</p>
 			
 			<!-- WEEK 10 -->
 			<a onclick="toggleWeek('10')"><div class="week"> <span class="symbol" id="symb10">&#9658;</span><b>&nbsp;Week 10 - Machine Learning Strategy 2 - 22.06</b></div></a>
 			<p class="weektext weekcontent" id="week10">
-				<a>Slides</a><br>
+				Guidelines for the projects presentations, suggestions on what to put on them, baseline and human performances. What about using transfer learning, end-to-end approaches, divide the problem into smaller subproblems, or using multi-tasking? Sometimes the problem can be seen from another perspective. <br>
+				Walkthrough a small code used for hyperparameter search: grid search, randomized search, and an example of tensorboard to visualize results
+				<b>Resources:</b> <a href="weeks/week9.html">Slides</a>, <a href="https://github.com/freerafiki/Notebooks/blob/master/DeepLearning/In_search_of_the_hyperparameters.ipynb">Notebook</a><br>
 			</p>
 			
 			<!-- WEEK 11 -->
