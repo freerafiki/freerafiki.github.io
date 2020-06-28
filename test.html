@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+			<title>Events Sammler FairNetzKiel</title>
+			<meta charset="UTF-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+			<link rel="stylesheet" href="css/w3s.css">
+	</head>
+
+	<body>
+
+	<div class="container">
+	
+		<div class="title">
+			<h1>FairNetz-Kiel Events Sammler</h1>
+		</div>
+		
+		<hr>
+		<div class="form_container">
+			<!-- FORM STARTS HERE -->
+			<form method="post" action="#">
+				<div class="right password ">
+
+					<h3> USERNAME und PASSWORT</h3>
+					<div id="askforpsw">
+						USERNAME <input type="text" name="user" value="<?php echo test_input($_POST['user']); ?>"> <br>
+						PASSWORT <input type="password" name="psw" value="<?php echo test_input($_POST['psw']); ?>"> <br>
+						<button type="submit" name="whatdoido" value="show">EVENTS ZEIGEN</button>
+					</div>
+					<div id="sayhitofn" style="display: none">
+						Hi, FairnetzSammler<br>
+						Schön, dass du hilfst und mitmachst!
+						Schönen Tag nohc und Danke, 
+						Fairnetz.
+					</div>
+
+				</div>
+
+				<hr>
+
+				<div class="event_management">
+					<!-- FIRST ROW -- ADD EVENTS -->
+					<div class="w3-row">
+						<div class="w3-col s9">
+							<div class="add_event">
+								<h3>EVENT HINZUFÜGEN</h3>
+								<div class="w3-row">
+									<div class="w3-col s3">
+										Kategorie
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+
+			<!-- FORM STOPS HERE -->
+			</form>
+		</div>
+	</div>
+	
+	</body>
+</html>
