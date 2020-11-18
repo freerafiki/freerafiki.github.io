@@ -1,0 +1,347 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="../deeplearning/css/reveal.css">
+		<link rel="stylesheet" href="../deeplearning/css/theme/league.css">
+		<link rel="stylesheet" href="../deeplearning/css/s.css">
+       <link rel="stylesheet" href="../css/bootstrap.css">
+       <!-- for gitbook -->
+      <title>Overview of different Neural Network Architectures - Advanced Machine Learning @ Opencampus</title>
+      <meta charset="UTF-8">
+      <meta name="description" content="Overview of different Neural Network Architectures.">
+      <meta name="keywords" content="Advanced Machine Learning, Opencampus, Overview, Architectures">
+      <meta name="author" content="Luca Palmieri">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="icon" type="image/png" href="img/icon.png">
+      <meta property="og:image" content="img/icon.png">
+      <!-- until here -->
+		<script>
+	var link = document.createElement( 'link' );
+	link.rel = 'stylesheet';
+	link.type = 'text/css';
+	link.href = window.location.search.match( /print-pdf/gi ) ? '../deeplearning/css/print/pdf.css' : '../deeplearning/css/print/paper.css';
+	document.getElementsByTagName( 'head' )[0].appendChild( link );
+</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<!-- WELCOME TO THE COURSE -->
+				<section>
+                <p class="">Advanced Machine Learning @ Opencampus</p>
+                <p class="slidetitle">Overview of different <br>Neural Network Architectures</p>
+                <p class="slidewithalotoftext">Wednesday, 18.11.2020</p>
+					
+				</section>
+				
+				<!-- QUESTIONS -->
+				<section>
+					<p class="slidetitle">What is an architecture of a neural network?</p><br>
+					<p class="fragment"><a href="https://youtu.be/oJNHXPs0XDk?t=22"><img src="img/ann.png" height=500></a></p>
+				</section>
+             
+            <section>
+                 <section>
+                   <p class="slidetitle">How many different architecture exists?</p>
+                   <p class="fragment"><img class="r-stretch" src="https://www.asimovinstitute.org/wp-content/uploads/2019/04/NeuralNetworkZoo20042019.png" width="30%"><br>
+                     <a href="https://www.asimovinstitute.org/neural-network-zoo/">The Neural Network Zoo, The Asimov Institute</a></p>
+                 </section>
+                <section>
+                    <p class="text">We focus on 6 main categories today:</p>
+                    <div class="row">
+                        <div class="col-4"><p class="fragment">FFNN</p>
+                        </div>
+                        <div class="col-4"><p class="fragment">ENCODER/DECODER</p>
+                        </div>
+                        <div class="col-4"><p class="fragment">CNN</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-4"><p class="fragment">RNN/LSTM</p>
+                        </div>
+                        <div class="col-4"><p class="fragment">GAN</p>
+                        </div>
+                        <div class="col-4"><p class="fragment">TRANSFORMER</p>
+                        </div>
+                    </div>
+                </section>
+				</section>
+             
+            <section>
+                <section>
+                    <p class="slidetitle">Feed Forward Neural Networks</p>
+                    <img class="r-stretch" src="img/ffnn.png" >
+                    <p >Simplest structure: <br>input layer, hidden layer(s), output layer</p>
+                </section>
+                <section>
+                    <p class="">Introduced in 1958 as the perceptron [1]</p>
+                    <img src="img/peceptron.png" class="r-stretch">
+                    <p class="">Biologically inspired</p>
+                </section>
+                <section>
+                    <p class="slidetitle">Bibliography</p>
+                    <p class="slidewithalotoftext" style="text-align: left">
+                    <br>[1] <a href="https://www.ling.upenn.edu/courses/cogs501/Rosenblatt1958.pdf">Rosenblatt, Frank. <i>The perceptron: a probabilistic model for information storage and organization in the brain.</i> Psychological review 65.6 (1958): 386.</a>
+                    </p>
+                </section>
+             </section> 
+             
+             
+            <!-- AE/VAE --> 
+            <section>
+                <section>
+                    <p class="slidetitle">Autoencoders</p>
+                    <img src="img/ae.png" class="r-stretch">
+                    <p >What is an encoder doing?</p>
+                </section>
+                <section>
+                    <p class="slidewithalotoftext"><i>An autoencoder is a neural network that learns to copy its input to its output.</i> [1]</p>
+                    <p class="fragment slidewithreallyalotoftext"><i>It has an internal (hidden) layer that describes a code used to represent the input, and it is constituted by two main parts: an encoder that maps the input into the code, and a decoder that maps the code to a reconstruction of the original input.</i> [1]<br>
+                    <img src="img/ae_schema.jpg" width=30%><br></p>
+                    <p class="fragment slidewithalotoftext"><i>Often when people write autoencoders, the hope is that the middle layer h will take on useful properties in some compressed format. [2]</i></p>
+                </section>
+                <section>
+                    <p class="slidetitle">An example of when we do not need it [2,3]</p>
+                    <p class="fragment"><img src="img/ae1.png" height=253rem;></p>
+                    <p class="fragment"><img src="img/ae2.png" height=200rem;></p>
+                </section>
+                <section>
+                    <p class="slidetitle">An example of when we do need it [2,3]</p>
+                    <p class="fragment"><img src="img/denoising.png" width=1600rem;></p>
+                    <p class="fragment"><img src="img/denoising2.png" width=1600rem;></p>
+                </section>
+                <section>
+                    <p class="slidetitle">Bibliography</p>
+                    <p class="slidewithreallyalotoftext" style="text-align: left">
+                        <b>Articles:</b>
+                        <br>[1] <a href="https://en.wikipedia.org/wiki/Autoencoder">Autoencoder on Wikipedia</a>
+                        <br>[2] <a href="https://towardsdatascience.com/autoencoder-neural-networks-what-and-how-354cba12bf86">Article about autoencoders and denoising example (Towardsdatascience.com)</a>  
+                        <br>[3] <a href="https://blog.keras.io/building-autoencoders-in-keras.html">Building Autoencoders in Keras</a>
+                        <br><b>Papers:</b>
+                        <br>[4] <a href="http://publications.idiap.ch/downloads/reports/2000/rr00-16.pdf">Bourlard, Hervé, and Yves Kamp. <i>Auto-association by multilayer perceptrons and singular value decomposition.</i> Biological cybernetics 59.4-5 (1988): 291-294.</a>
+                        <br>[5] <a href="https://arxiv.org/pdf/1312.6114v10.pdf">Kingma, Diederik P., and Max Welling. <i>Auto-encoding variational bayes.</i> arXiv preprint arXiv:1312.6114 (2013).</a>
+                        <br>[6] <a href="http://machinelearning.org/archive/icml2008/papers/592.pdf">Vincent, Pascal, et al. <i>Extracting and composing robust features with denoising autoencoders.</i> Proceedings of the 25th international conference on Machine learning. ACM, 2008.</a>
+                    </p>
+                </section>
+             </section> 
+             
+             <!-- CNN -->
+             <section>
+                <section>
+                    <p class="slidetitle">Convolutional Neural Networks</p>
+                    <img src="img/cnn.png" class="r-stretch">
+                    <p >What is a convolution?</p>
+                </section>
+                <section>
+                    <p class="slidetitle">A Convolution, animated [1,2]</p>
+                    <img src="img/full_padding_no_strides_transposed.gif" class="r-stretch">
+                </section>
+                <section>
+                    <p class="slidetitle">A Convolutional Neural Network explained [3]</p>
+                    <a href="https://youtu.be/aircAruvnKk?t=172"><img src="img/vid_prev.png" width="1700rem" height="500px"></a>
+                </section>
+                <section>
+                    <p class="slidetitle">The historical CNNs [4]</p>
+                    <p>Even though the first paper came out in 1998 [5], the actual breakthrough happened later and was the beginning of the neural network trend.</p>
+                </section>
+                <section>
+                     <p class="slidetitle">AlexNet (2012) [6]</p>
+                     <img src="img/AlexNet.png" class="r-stretch">
+                     <p>It won the imagenet competition and showed the potential of CNN</p>
+                </section> 
+                <section>
+                     <p class="slidetitle">VGG (2014) [7]</p>
+                     <img class="r-stretch" src="img/VGGNet.png" height=450rem;>
+                     <p>Simpler and deeper network achieve better results</p>
+                </section> 
+                <section>
+                     <p class="slidetitle">GoogLe Net (2015) [8]</p> 
+                     <img class="r-stretch" src="img/GoogleNet.gif" height=450rem;>
+                     <p>Introduced non sequential layer like the inception layer</p>
+                </section> 
+                <section>
+                     <p class="slidetitle">ResNet (2015) [9]</p>
+                     <img class="r-stretch" src="img/ResNet.gif" height=450rem;>
+                     <p>Ultra-deep (152 layers) optimizing the residual</p>
+                </section> 
+                <section>
+                     <p class="slidetitle"><a href="https://poloclub.github.io/cnn-explainer/">Bonus: CNN Explainer Demo [10]</a></p>
+                     <a href="https://poloclub.github.io/cnn-explainer/"><img src="img/cnn_exp.png" width=100%></a>
+                </section> 
+                 <section>
+                     <p class="slidetitle"><a href="                 https://www.cs.ryerson.ca/~aharley/vis/conv/flat.html">Bonus: CNN Visualizer Demo [11]</a></p>
+                     <a href="https://www.cs.ryerson.ca/~aharley/vis/conv/flat.html"><img src="img/cnn_vis.png" width=100%></a>
+                </section> 
+                 
+                <section>
+                    <p class="slidetitle">CNN Bibliography</p>
+                    <p class="slidewithreallyalotoftext" style="text-align: left">
+                        
+                        <br>[1] <a href="https://arxiv.org/abs/1603.07285"><i>A guide to convolution arithmetic for deep learning</i>, Dumoulin et al. (2018)</a>
+                        <br>[2] <a href="https://github.com/vdumoulin/conv_arithmetic">Github repository for the animations related to the convolution arithmetic [1]</a>
+                        <br>[3] <a href="https://www.3blue1brown.com">3blue1brown: a great resource for math explanation and visualizations.</a>
+                        
+                        <br>[4] <a href="https://adeshpande3.github.io/The-9-Deep-Learning-Papers-You-Need-To-Know-About.html">The 9 Deep Learning Papers you need to know about (Article)</a>
+                        <br>[5] <a href="http://yann.lecun.com/exdb/publis/pdf/lecun-01a.pdf"><i>Gradient-Based Learning Applied to Document Recognition</i>, LeCunn et al. (1998)</a>
+                        <br>[6] <a href="https://papers.nips.cc/paper/2012/file/c399862d3b9d6b76c8436e924a68c45b-Paper.pdf"><i>ImageNet Classification with Deep ConvolutionalNeural Networks</i>, Krizhevsky et al. (2012)</a>
+                        <br>[7] <a href="https://arxiv.org/abs/1409.1556"><i>Very Deep Convolutional Networks for Large-Scale Image Recognition</i>, Simonyan et al. (2014)</a>
+                        <br>[8] <a href="https://www.cv-foundation.org/openaccess/content_cvpr_2015/papers/Szegedy_Going_Deeper_With_2015_CVPR_paper.pdf"><i>Going Deeper with Convolutions</i>, Szegedy et al. (2015)</a>
+                        <br>[9] <a href="https://arxiv.org/pdf/1512.03385v1.pdf"><i>Deep Residual Learning for Image Recognition</i>, He et al. (2015)</a>
+                        <br>[10] <a href="https://poloclub.github.io/cnn-explainer/">CNN Explainer Demo: play with a CNN in your browser</a>
+                        <br>[11] <a href="https://www.cs.ryerson.ca/~aharley/vis/conv/flat.html">CNN Visualizer Demo: Flat 2D Visualization</a>
+                    </p>
+                </section>
+             </section> 
+             
+             <!-- GAN -->
+             <section>
+                 <section>
+                    <p class="slidetitle">Generative Adversarial Networks</p>
+                    <img class="r-stretch" src="img/gan.png" width=100%>
+                    <p>What are adversarial networks?</p>
+                 </section>
+                 <section>
+                    <p class="slidetitle">Adversarial Examples</p>
+                    <img class="r-stretch" src="img/adversarial_img_1.png" width=100%>
+                    <p>Some models are sensible to specific noise patterns [1]</p>
+                 </section>
+                 <section>
+                    <p class="slidetitle">GAN in simple words</p>
+                    <p><i>The generative model can be thought of as analogous to a team of counterfeiters,trying  to  produce  fake  currency  and  use  it  without  detection,  while  the  discriminative  model  isanalogous to the police, trying to detect the counterfeit currency.  Competition in this game drivesboth teams to improve their methods until the counterfeits are indistiguishable from the genuinearticles.</i> [2]</p>
+                 </section>
+                 
+                 <section>
+                    <p class="slidetitle">Why is that so interesting? </p>
+                     <p><i>It allows us to train a discriminator as an unsupervised “density estimator”, i.e. a contrast function that gives us a low value for data and higher output for everything else. This discriminator has to develop a good internal representation of the data to solve this problem properly. It can then be used as a feature extractor for a classifier, for example.</i> [3]</p>
+                 </section>
+                 <section>
+                     <p class="slidetitle"><a href="https://poloclub.github.io/ganlab/">Bonus: GAN Lab in your browser</a> [4]</p>
+                    <iframe src="https://poloclub.github.io/ganlab/" width=100% height=450rem;></iframe>
+                </section>
+                <section>
+                    <p class="slidetitle"><a href="https://thispersondoesnotexist.com/">This person does not exist</a></p>
+                    <iframe src="https://thispersondoesnotexist.com/" width=100% height=450rem;></iframe>
+                 </section>
+                 <section>
+                    <p class="slidetitle">Bibliography</p>
+                    <p class="slidewithalotoftext" style="text-align: left">
+                        <br>[1] <a href="https://arxiv.org/abs/1412.6572">Explaining and Harnessing Adversarial Examples</a>, Goodfellow et al. (2014)
+                        <br>[2] <a href="https://arxiv.org/abs/1406.2661">Generative Adversarial Networks</a>, Goodfellow et al. (2014)
+                        <br>[3] <a href="https://www.quora.com/What-are-some-recent-and-potentially-upcoming-breakthroughs-in-deep-learning">Quora Answer from Yann LeCun</a>
+                        <br>[4] <a href="https://poloclub.github.io/ganlab/">GanLab from PoloClub</a>
+                        <br>[5] <a href="https://thispersondoesnotexist.com/">This Person does not Exist, website with images generated with a StyleGAN</a>
+                        <br>Additional Resources:
+                        <br>[6] <a href="https://towardsdatascience.com/must-read-papers-on-gans-b665bbae3317">Must-Read Papers on GANs, Blog Post</a>
+                        <br>[7] <a href="https://arxiv.org/abs/1511.06434">Deep Convolutional GAN</a>, Radford et al. (2015)
+                    </p>
+                 </section>
+             </section> 
+				
+             <!-- RNN/LSTM -->
+             <section>
+                <section>
+                    <p class="slidetitle">Recurrent Neural Networks and Long Short Term Memory</p>
+                    <img src="img/lstm.png" class="r-stretch">
+                    <p>A leap into language processing</p>
+                </section>
+                <section>
+                    <p class="slidetitle">What makes Recurrent Networks so special? [1]</p>
+                    <p class="fragment"><i>they [Neural Networks] accept a fixed-sized vector as input (e.g. an image) and produce a fixed-sized vector as output (e.g. probabilities of different classes). [..] The core reason that recurrent nets are more exciting is that they allow us to operate over sequences of vectors: Sequences in the input, the output, or in the most general case both.</i> [1]</p>
+                </section>
+                <section>
+                     <p class="slidetitle">What does Long Short Term Memory means?</p>
+                     <p class="slidewithalotoftext"><i>[LSTM] are a special kind of RNN, capable of learning long-term dependencies. They were introduced by Hochreiter &amp; Schmidhuber (1997) [2] [..] LSTMs are explicitly designed to avoid the long-term dependency problem. Remembering information for long periods of time is practically their default behavior, not something they struggle to learn!</i> [3]</p>
+                </section>
+                <section>
+                    <p class="slidetitle">Natural Language Processing Application [4]</p>
+                    <iframe src="https://distill.pub/2019/memorization-in-rnns/#ar-demo" width=100% height="500rem;" style="background: white"></iframe>
+                </section>
+                <section>
+                    <p class="slidetitle">RNN/LSTM Bibliography</p>
+                    <p class="slidewithalotoftext" style="text-align: left">
+                        <br>[1] <a href="http://karpathy.github.io/2015/05/21/rnn-effectiveness/">The unreasonable Effectiveness of RNN - Andrej Karpathy</a>
+                        <br>[2] <a href="https://www.bioinf.jku.at/publications/older/2604.pdf"><i>Long Short Term Memory</i>, Hochreiter et al. (1997)</a>
+                        <br>[3] <a href="https://colah.github.io/posts/2015-08-Understanding-LSTMs/">Understanding LSTMs - Colah's Blog</a>
+                        <br>[4] <a href="https://distill.pub/2019/memorization-in-rnns/">Memorization RNN/LSTM</a>
+                        <br>Additional Resources:
+                        <br>[5] <a href="http://joshvarty.github.io/VisualizingRNNs/">Animation RNN</a>
+                        <br>[6] <a href="http://blog.echen.me/">Detailed Explanation, LSTM</a>
+                        <br>[7] <a href="http://colah.github.io/posts/2014-07-NLP-RNNs-Representations/">RNN representation</a>
+                        
+                    </p>
+                </section>
+             </section> 
+            
+             
+             <!-- TRANSFORMER -->
+             <section>
+                 <section>
+                     <p class="slidetitle">Transformers</p>
+                     <img class="r-stretch" src="img/trans.png">
+                     <p>A peak into the transformer model</p>
+                 </section>
+                 <section>
+                     <p class="slidetitle">Transformers are based on the attention model [1]</p>
+                    <p class="fragment">Attention comes from the need of reducing avoiding long sequential computations</p>
+                     <p class="fragment">It's a mechanism to choose where to pay attention while processing the data</p>
+                    <img src="img/hiddenstates.gif" width=50%;>
+                 </section>
+                 <section>
+                     <p class="slidetitle">Attention while translating sentences [1]</p>
+                    <img src="img/attention2.png" width=50%>
+                 </section>
+                 <section>
+                     <p class="slidetitle">The Transformer Model stacks Attention layers [2]</p>
+                    <img src="img/trans_arch.png" width=40%>
+                 </section>
+                 <section>
+                     <p class="slidetitle">Using Self Attention [3]</p>
+                    <img src="img/selfatt.png" width=60%>
+                     <p>A mechanism involving queries, key and values</p>
+                 </section>
+                 <section>
+                     <p class="slidetitle">Can they be used only on text? </p>
+                    <p class="fragment">
+                        <img src="img/trans2.png" width=60%><br>
+                        A very recent paper (ICLR 2021) [4] shows <br>an application for image processing [5,6]
+                     </p>
+                 </section>
+                <section>
+                    <p class="slidetitle">Bibliography</p>
+                    <p class="slidewithalotoftext" style="text-align: left">
+                        <br>[1] <a href="https://towardsdatascience.com/transformers-141e32e69591">How Transformers Work</a>
+                        <br>[2] <a href="https://arxiv.org/pdf/1706.03762.pdf"><i>Attention is All You Need</i>, Various Authors (2017)</a>
+                        <br>[3] <a href="http://jalammar.github.io/illustrated-transformer/">The Illustrated Transformer, Jay Alammar, Blog Post</a>
+                        <br>[4] <a href="https://arxiv.org/abs/2010.11929v1"><i>An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale</i>, Various Authors (2021)</a>
+                        <br>[5] <a href="https://medium.com/swlh/an-image-is-worth-16x16-words-transformers-for-image-recognition-at-scale-brief-review-of-the-8770a636c6a8">An Image Is Worth 16x16 Words: Transformers for Image Recognition at Scale (Brief Review of the ICLR 2021 Paper)</a>
+                        <br>[6] <a href="https://github.com/google-research/vision_transformer">Github Repository with Fine-tuned Code for Vision Transformer</a>
+                        
+                    </p>
+                 </section>
+             </section> 
+             
+             <section>
+                <section>
+                    <p class="slidetitle">What's next?</p>
+                    Anybody has an idea of what the next architecture could look like?
+
+                 </section>
+                 <section>
+                     <p class="slidetitle">Should we let the network learn it? [1] </p>
+                     <a href="https://www.youtube.com/watch?v=6JZNEb5uDu4"><img src="img/nnitself.png" width="100%"></a>
+                 </section>
+                 <section>
+                    <p class="slidetitle">Bibliography</p>
+                    <p class="slidewithalotoftext" style="text-align: left">
+                        <br>[1] <a href="https://arxiv.org/pdf/1711.00436.pdf">Hierarchical Representations For Efficient Architecture Search, Liu et al. (2018)</a>
+
+                    </p>
+                 </section>
+             </section>
+			</div>
+		</div>
+		<script src="../deeplearning/js/reveal.js"></script>
+		<script>
+			Reveal.initialize();
+		</script>
+	</body>
+</html>
