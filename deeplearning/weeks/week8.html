@@ -59,10 +59,11 @@
 				<section>
 						<p class="slidetitle">QUIZ (15 mins)</p><br>
 						<p>
-                    1. Which approach should you use in your project? 
-							1. If we use batch normalization, should we stop using normalization before the input layer? <br>
-                     2. Will using normalization result in faster or slower execution at training and testing time?<br>
-							3. Hyperparameters search: which one is better between random and grid search? And why? Can you think of a different solution?<br>
+                     1. Which approach should you use in your project? Train one model and try to fine-tune it, or train several models and see which one works better?<br>
+                     2. About hyperparameters search: which would you use? random, grid search, or a different solution? Is there a specific reason behind? <br>
+                     3. If we use batch normalization, should we stop using normalization before the input layer? Should we use batch normalization in only some layers or an all levels?<br>
+                     4. In which sense batch normalization makes the network train faster? If we add computations, shouldn't the single iteration be slower?<br>
+                     <br>
 						</p>
 				</section>
 			
@@ -84,7 +85,7 @@
 					<!-- EXERCISES -->
 				<section>
 					<section>
-						<p class="slidetitle">EXERCISE (15-20 mins)</p>
+						<p class="slidetitle">Exercise</p>
 						We go through the programming assignment that were planned for this week.<br>	
 						0. What are the differences between TF1.0 and TF2.0?<br>
 						1. What is tf.placeholder(tf.float32, shape=(X, None)) ?<br>
