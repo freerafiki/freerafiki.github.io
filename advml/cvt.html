@@ -1,0 +1,110 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="../deeplearning/css/reveal.css">
+		<link rel="stylesheet" href="../deeplearning/css/theme/league.css">
+		<link rel="stylesheet" href="../deeplearning/css/s.css">
+       <link rel="stylesheet" href="../css/bootstrap.css">
+       <!-- for gitbook -->
+      <title>Transformers for Computer Vision - Advanced Machine Learning @ Opencampus</title>
+      <meta charset="UTF-8">
+      <meta name="description" content="Transformers for Computer Vision">
+      <meta name="keywords" content="Advanced Machine Learning, Opencampus, Transformers, ViT, DeiT">
+      <meta name="author" content="Luca Palmieri">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="icon" type="image/png" href="img/icon.png">
+      <meta property="og:image" content="img/icon.png">
+      <!-- until here -->
+		<script>
+         var link = document.createElement( 'link' );
+         link.rel = 'stylesheet';
+         link.type = 'text/css';
+         link.href = window.location.search.match( /print-pdf/gi ) ? '../deeplearning/css/print/pdf.css' : '../deeplearning/css/print/paper.css';
+         document.getElementsByTagName( 'head' )[0].appendChild( link );
+      </script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<!-- WELCOME TO THE COURSE -->
+				<section>
+                <p class="">Advanced Machine Learning @ Opencampus</p>
+                <p class="slidetitle">Transformer<br>for Computer Vision</p>
+                <p class="slidewithalotoftext">Wednesday, 27.01.2021</p>
+					
+				</section>
+				
+            <section>
+              <section>
+                <p class="slidetitle">The Basics</p>
+                <p>We assume the general ideas behind convolutional networks working with images and text are known. <br>
+                Transformer and the idea of Attention was also discussed in the last weeks.</p>
+              </section> 
+              <section>
+                <p class="slidetitle">Convolutional Neural Network</p>
+                <img class="r-stretch" src="https://raw.githubusercontent.com/vdumoulin/conv_arithmetic/master/gif/same_padding_no_strides_transposed.gif">
+              </section> 
+              <section>
+                <p class="slidetitle">Long Short Term Memory</p>
+                <img class='r-stretch' src="https://miro.medium.com/max/2400/1*AQ52bwW55GsJt6HTxPDuMA.gif">
+              </section> 
+              <section>
+                <p class="slidetitle">The concept of Attention</p>
+                <img class='r-stretch' src="https://miro.medium.com/max/700/1*ygAgowqTZjR6ABzZHd8Bqg.gif">
+              </section> 
+            </section>
+             
+				<!-- QUESTIONS -->
+				<section>
+				  <p class="slidetitle">Can we treat images as text?</p>
+              <img class="r-stretch" src="img/imagepatches.png">
+				</section>
+             
+            <section>
+                <p class="slidetitle">ViT (Vision Transformer)</p>
+                <img class="r-stretch" src="img/vit.png">
+				</section>
+             
+            <section>
+
+                <p class="slidetitle">ViT Results</p>
+                <img class="r-stretch" src="img/vit_res1.png">
+            </section>
+            <section>
+                <p class="slidetitle">ViT Results</p>
+                <img class="r-stretch" src="img/vit_res2.png">
+            </section> 
+            <section>
+                <p class="slidetitle">ViT Limitations</p>
+                <p class="slidewithalotoftext"><i>When trained on mid-sized datasets such as ImageNet, such models yield modest accuracies of a fewpercentage points below ResNets of comparable size.  This seemingly discouraging outcome maybe expected: Transformers lack some of the inductive biases inherent to CNNs, such as translation equivariance and locality, and therefore do not generalize well when trained on insufficient amountsof data.</i><br>Text from the <a href="https://arxiv.org/pdf/2010.11929.pdf">Original Paper</a></p>
+            </section> 
+            
+            <section>
+                <p class="slidetitle">DeiT (Data Efficient Image Transformer)</p>
+                <img class="r-stretch" src="img/deit.png" width=40%>
+            </section> 
+            <section>
+                <p class="slidetitle">Distillation</p>
+                <img class="r-stretch" src="img/teacher.png"><br>
+                <i>We have observed that using a convnet teacher gives bet-ter performance than using a transformer.</i>
+                <br>Text from the <a href="https://arxiv.org/pdf/2012.12877.pdf">Original Paper</a>
+
+            </section> 
+            <section>
+                <p class="slidetitle">DeiT Results</p>
+                <img class="r-stretch" src="img/deit_res.png" width=40%>
+              
+            </section> 
+            <section>
+                <p class="slidetitle">What can we do with it?</p>
+                <a href="https://youtu.be/C7D5EzkhT6A?t=96"><img src="img/dalle.png"></a>
+            </section> 
+           
+             
+			</div>
+		</div>
+		<script src="../deeplearning/js/reveal.js"></script>
+		<script>
+			Reveal.initialize();
+		</script>
+	</body>
+</html>
